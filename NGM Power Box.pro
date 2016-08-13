@@ -1,4 +1,4 @@
-update=6/30/2016 10:27:25 AM
+update=8/11/2016 6:09:32 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=Libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=Libraries/ngm_components
+LibName31=C:/Program Files/KiCad/share/kicad/library/contrib_symbols_dl1eic/Symbols_Transformer-Diskrete_RevA
