@@ -25,7 +25,7 @@ Includes legacy box notes and build requirements.
 - There does not appear to be a voltage regulator (probably doesn’t need one).
 
 ####PSX-3
-- This device is currently wired as if it were 3 discreet PSX-1's (not daisy chained).
+- This device is currently wired as if it were 3 discrete PSX-1's (not daisy chained).
 - Each booster is connected to the input of a PSX-1.
 - Wiring [manual diagram is here](http://www.dccspecialties.com/products/pdf/man_psx1.pdf).
 
