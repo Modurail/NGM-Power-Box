@@ -58,7 +58,7 @@ Includes legacy box notes and build requirements.
     - one 12 VDC ventilation fan powered by the main transformer (will need a DC regulator circuit) or its own dedicated supply (TBD).
 
 ####Remote Districts 2,3...
-- Additional districts (2, 3...) are designated as remote districts, each with its own discreet power box containing:
+- Additional districts (2, 3...) are designated as remote districts, each with its own discrete power box containing:
     - one DB200 booster feeding
     - one PSX-3 circuit breaker feeding...
         - 3 sub-districts (mainline tracks 1-3)
