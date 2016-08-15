@@ -1,9 +1,6 @@
 #Power Box Specifications
 Includes legacy box notes and build requirements.
 
-
-> Written with [StackEdit](https://stackedit.io/).
-
 ##Legacy Power Box Notes
 - According to Dave Koch, the original box was built by J.J. Fail.
 - Not exactly sure when it was first put into service, but very likely in the early 2000’s (maybe earlier).
@@ -123,4 +120,6 @@ Includes legacy box notes and build requirements.
 - Remote District boxes will need a DCC common ground connection. There are two suggested possibilities:
     1) Connect a single gray wire (designated DCC ground) between every district interface.
     2) Contrive a ground connection using the 2 extra wires in an 8-wire cable that connects the LocoNet protected network.
+
+> Originally written with [StackEdit](https://stackedit.io/).
 
