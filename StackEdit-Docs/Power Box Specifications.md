@@ -118,8 +118,8 @@ Includes legacy box notes and build requirements.
 - LocoNet connections between district boxes will use standard LocoNet cable connected to the protected ports on the LNRPs.
 - Local accessory power needs will be provided by each District power box seperately so no additional wirong is needed between districts.
 - Remote District boxes will need a DCC common ground connection. There are two suggested possibilities:
-    1) Connect a single gray wire (designated DCC ground) between every district interface.
-    2) Contrive a ground connection using the 2 extra wires in an 8-wire cable that connects the LocoNet protected network.
+    1. Connect a single gray wire (designated DCC ground) between every district interface.
+    2. Contrive a ground connection using the 2 extra wires in an 8-wire cable that connects the LocoNet protected network.
 
 > Originally written with [StackEdit](https://stackedit.io/).
 
