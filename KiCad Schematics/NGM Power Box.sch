@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:NGM Power Box-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,40 +31,34 @@ LIBS:contrib
 LIBS:valves
 LIBS:ngm_components
 LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:m-junction_box
+LIBS:NGM-Custom
+LIBS:relay_3pdt
+LIBS:NGM Power Box-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
-Title ""
-Date ""
+Sheet 1 3
+Title "NGM Power and LocoNet Power Boxes"
+Date "2016-08-27"
 Rev ""
-Comp ""
+Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L DCS-240 DCS?
-U 1 1 57ACF629
-P 2100 4680
-F 0 "DCS?" H 2250 5520 60  0000 C CNN
-F 1 "DCS-240" H 2350 5600 60  0000 C CNN
-F 2 "" H 2090 4880 60  0000 C CNN
-F 3 "" H 2090 4880 60  0000 C CNN
-	1    2100 4680
-	1    0    0    -1  
-$EndComp
-$Comp
-L LocoNet_Repeater LNRP?
-U 1 1 57ACF698
-P 4710 4670
-F 0 "LNRP?" H 4900 5010 60  0000 C CNN
-F 1 "LocoNet_Repeater" H 5150 5090 60  0000 C CNN
-F 2 "" H 4800 4900 60  0000 C CNN
-F 3 "" H 4800 4900 60  0000 C CNN
-	1    4710 4670
-	0    -1   -1   0   
-$EndComp
+$Sheet
+S 1290 1580 1120 280 
+U 57C1C4BF
+F0 "District 1" 60
+F1 "District1.sch" 60
+$EndSheet
+$Sheet
+S 1300 2200 1240 370 
+U 57C1C56F
+F0 "Remote District Box" 60
+F1 "Remote-District.sch" 60
+$EndSheet
 $EndSCHEMATC

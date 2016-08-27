@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# M-Junction_Box
+#
+DEF M-Junction_Box M 0 40 Y Y 1 F N
+F0 "M" -300 -2600 60 H V C CNN
+F1 "M-Junction_Box" -300 -2600 60 H V C CNN
+F2 "" -300 -2600 60 H V C CNN
+F3 "" -300 -2600 60 H V C CNN
+DRAW
+T 0 400 900 60 0 0 0 M-Junction~Box  Normal 0 C C
+S 1300 0 0 1050 0 1 0 N
+X Red 1 1300 100 200 L 50 50 1 1 B
+X Green 2 1300 200 200 L 50 50 1 1 B
+X Blue 3 1300 300 200 L 50 50 1 1 B
+X Yellow 4 1300 400 200 L 50 50 1 1 B
+X Orange 5 1300 500 200 L 50 50 1 1 B
+X Brown 6 1300 600 200 L 50 50 1 1 B
+X White 7 1300 700 200 L 50 50 1 1 W
+X Black 8 1300 800 200 L 50 50 1 1 W
+X Gray 9 1300 900 200 L 50 50 1 1 N
+ENDDRAW
+ENDDEF
+#
+#End Library

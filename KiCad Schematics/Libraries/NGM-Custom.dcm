@@ -1,0 +1,45 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Anderson_J
+D Anderson Connector Block 'J' Configuration
+$ENDCMP
+#
+$CMP Anderson_M
+D Anderson Connector Block 'M' Configuration
+$ENDCMP
+#
+$CMP J-Connector
+D 'J' Configuration Anderson 9P Connector Block
+$ENDCMP
+#
+$CMP Relay
+D Relay Control Box
+$ENDCMP
+#
+$CMP SPST-NO
+D Interrupter simple (NO)
+K switch
+$ENDCMP
+#
+$CMP SW_PUSH_NO
+D Button
+K Switch
+$ENDCMP
+#
+$CMP TERM_03
+D Connector 02x03
+$ENDCMP
+#
+$CMP TERM_06
+D Connector 02x06
+$ENDCMP
+#
+$CMP TERM_08
+D Connector 02x08
+$ENDCMP
+#
+$CMP Terminal_3P
+D Connector 02x03
+$ENDCMP
+#
+#End Doc Library
