@@ -642,12 +642,6 @@ Wire Bus Line
 	1560 4920 1560 6500
 Wire Bus Line
 	1560 6500 2030 6500
-Wire Bus Line
-	2030 6600 1560 6600
-Wire Bus Line
-	1560 6600 1560 7130
-Wire Bus Line
-	1560 7130 3870 7130
 Wire Wire Line
 	5060 3430 4520 3430
 Wire Wire Line
@@ -1001,4 +995,10 @@ Connection ~ 1200 2790
 Wire Wire Line
 	1200 3210 1200 3320
 Connection ~ 1200 3320
+Wire Bus Line
+	3870 7130 1070 7130
+Wire Bus Line
+	1070 7130 1070 4820
+Wire Bus Line
+	1070 4820 2020 4820
 $EndSCHEMATC
