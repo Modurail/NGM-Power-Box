@@ -50,13 +50,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1290 1580 2190 1310
+S 1290 1580 1120 280 
 U 57C1C4BF
 F0 "District 1" 60
 F1 "District1.sch" 60
 $EndSheet
 $Sheet
-S 1470 3330 1890 1270
+S 1300 2200 1240 370 
 U 57C1C56F
 F0 "Remote District Box" 60
 F1 "Remote-District.sch" 60
