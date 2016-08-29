@@ -767,4 +767,16 @@ Wire Bus Line
 	6890 5130 7590 5130
 Wire Bus Line
 	7590 5130 7590 2220
+Wire Bus Line
+	2030 5550 560  5550
+Wire Bus Line
+	560  5550 560  7160
+Wire Bus Line
+	560  7160 3490 7160
+Text Label 1620 7170 0    60   ~ 0
+Protected_LocoNet
+Text Notes 2020 7290 0    60   ~ 0
+From upstream LNRP
+Text Notes 1520 1150 0    60   ~ 0
+Connect to TR1 chassis.
 $EndSCHEMATC
