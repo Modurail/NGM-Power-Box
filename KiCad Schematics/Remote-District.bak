@@ -300,11 +300,17 @@ Wire Wire Line
 Wire Wire Line
 	1050 1350 650  1350
 Wire Bus Line
-	550  600  550  1250
+	550  600  550  1050
+Wire Bus Line
+	550  1050 550  1150
+Wire Bus Line
+	550  1150 550  1250
 Wire Wire Line
 	1050 1050 850  1050
 Wire Bus Line
-	750  650  750  950 
+	750  650  750  850 
+Wire Bus Line
+	750  850  750  950 
 Wire Wire Line
 	1550 950  2500 950 
 Wire Wire Line
@@ -312,7 +318,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 1350 2070 1350
 Wire Wire Line
-	1550 1450 2900 1450
+	1550 1450 3010 1450
 Wire Wire Line
 	1550 1550 2820 1550
 Wire Wire Line
@@ -334,7 +340,11 @@ Wire Wire Line
 Wire Wire Line
 	6050 2760 6050 2870
 Wire Bus Line
-	5360 2970 5950 2970
+	5360 2970 5460 2970
+Wire Bus Line
+	5460 2970 5850 2970
+Wire Bus Line
+	5850 2970 5950 2970
 Wire Wire Line
 	1800 5090 2030 5090
 Wire Wire Line
@@ -352,13 +362,19 @@ Wire Wire Line
 Wire Wire Line
 	2030 5290 1420 5290
 Wire Bus Line
-	1320 5290 1320 6410
+	1320 5290 1320 5390
+Wire Bus Line
+	1320 5390 1320 6410
 Wire Wire Line
 	6150 2760 6150 2870
 Wire Wire Line
 	6250 2760 6250 2870
 Wire Bus Line
-	6250 2970 6930 2970
+	6250 2970 6350 2970
+Wire Bus Line
+	6350 2970 6830 2970
+Wire Bus Line
+	6830 2970 6930 2970
 Wire Wire Line
 	7030 2760 7030 2870
 Wire Wire Line
@@ -378,13 +394,25 @@ Wire Wire Line
 Wire Wire Line
 	5690 1800 5640 1800
 Wire Bus Line
-	5540 1400 5540 1700
+	5540 1400 5540 1600
+Wire Bus Line
+	5540 1600 5540 1700
 Wire Wire Line
 	5260 1330 5260 1010
 Wire Wire Line
 	5360 1330 5360 1010
 Wire Bus Line
-	5360 910  8840 910 
+	5360 910  5460 910 
+Wire Bus Line
+	5460 910  6250 910 
+Wire Bus Line
+	6250 910  6350 910 
+Wire Bus Line
+	6350 910  7230 910 
+Wire Bus Line
+	7230 910  7330 910 
+Wire Bus Line
+	7330 910  8840 910 
 Wire Wire Line
 	6150 1330 6150 1010
 Wire Wire Line
@@ -394,7 +422,9 @@ Wire Wire Line
 Wire Wire Line
 	6670 1700 6610 1700
 Wire Bus Line
-	6510 1390 6510 1700
+	6510 1390 6510 1600
+Wire Bus Line
+	6510 1600 6510 1700
 Wire Wire Line
 	7130 1010 7130 1330
 Wire Wire Line
@@ -440,7 +470,9 @@ Entry Wire Line
 Entry Wire Line
 	5340 5160 5440 5060
 Wire Bus Line
-	5440 4730 5440 5060
+	5440 4730 5440 4960
+Wire Bus Line
+	5440 4960 5440 5060
 Text Label 5440 4730 0    60   ~ 0
 PS14
 Wire Bus Line
@@ -482,7 +514,17 @@ Entry Wire Line
 Entry Wire Line
 	8840 2320 8940 2420
 Wire Bus Line
-	8840 910  8840 2320
+	8840 910  8840 1820
+Wire Bus Line
+	8840 1820 8840 1920
+Wire Bus Line
+	8840 1920 8840 2020
+Wire Bus Line
+	8840 2020 8840 2120
+Wire Bus Line
+	8840 2120 8840 2220
+Wire Bus Line
+	8840 2220 8840 2320
 Entry Wire Line
 	880  2210 980  2110
 Text Label 880  2870 1    60   ~ 0
@@ -492,13 +534,13 @@ Wire Wire Line
 Wire Wire Line
 	9510 2020 9810 2020
 Wire Wire Line
-	9510 2120 9710 2120
+	9510 2120 9810 2120
 Wire Wire Line
-	9510 2220 9710 2220
+	9510 2220 9810 2220
 Wire Wire Line
-	9510 2320 9610 2320
+	9510 2320 9810 2320
 Wire Wire Line
-	9510 2420 9610 2420
+	9510 2420 9810 2420
 $Comp
 L M-Junction_Box_No-Tap M?
 U 1 1 57C1C750
@@ -511,53 +553,77 @@ F 3 "" H 8610 3610 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	9510 3660 9610 3660
+	9510 3660 9810 3660
 Wire Wire Line
-	9510 3740 9610 3740
+	9510 3740 9810 3740
 Wire Wire Line
-	9510 3820 9710 3820
+	9510 3820 9810 3820
 Wire Wire Line
-	9510 3900 9710 3900
+	9510 3900 9810 3900
 Wire Wire Line
 	9510 3980 9810 3980
 Wire Wire Line
 	9510 4060 9810 4060
 Entry Wire Line
-	9610 3660 9710 3560
+	9810 3660 9910 3560
 Entry Wire Line
-	9610 3740 9710 3640
+	9810 3740 9910 3640
 Entry Wire Line
-	9710 3820 9810 3720
+	9810 3820 9910 3720
 Entry Wire Line
-	9710 3900 9810 3800
+	9810 3900 9910 3800
 Entry Wire Line
 	9810 3980 9910 3880
 Entry Wire Line
 	9810 4060 9910 3960
 Entry Wire Line
-	9610 2420 9710 2520
+	9810 2420 9910 2520
 Entry Wire Line
-	9610 2320 9710 2420
+	9810 2320 9910 2420
 Entry Wire Line
-	9710 2220 9810 2320
+	9810 2220 9910 2320
 Entry Wire Line
-	9710 2120 9810 2220
+	9810 2120 9910 2220
 Entry Wire Line
 	9810 2020 9910 2120
 Entry Wire Line
 	9810 1920 9910 2020
 Wire Bus Line
-	9710 2420 9710 3640
+	9910 2020 9910 2120
 Wire Bus Line
-	9810 2220 9810 3800
+	9910 2120 9910 2220
 Wire Bus Line
-	9910 2020 9910 3960
-Text Label 9710 3450 1    60   ~ 0
-SD-1
-Text Label 9810 3230 1    60   ~ 0
-SD-2
+	9910 2220 9910 2320
+Wire Bus Line
+	9910 2320 9910 2420
+Wire Bus Line
+	9910 2420 9910 2520
+Wire Bus Line
+	9910 2520 9910 3560
+Wire Bus Line
+	9910 3560 9910 3640
+Wire Bus Line
+	9910 3640 9910 3720
+Wire Bus Line
+	9910 3720 9910 3800
+Wire Bus Line
+	9910 3800 9910 3880
+Wire Bus Line
+	9910 3880 9910 3960
+Wire Bus Line
+	9910 3960 9910 5150
+Wire Bus Line
+	9910 5150 9910 5230
+Wire Bus Line
+	9910 5230 9910 5310
+Wire Bus Line
+	9910 5310 9910 5390
+Wire Bus Line
+	9910 5390 9910 5470
+Wire Bus Line
+	9910 5470 9910 5550
 Text Label 9910 3010 1    60   ~ 0
-SD-3
+SD_1-3
 Wire Wire Line
 	9510 4300 9610 4300
 Wire Wire Line
@@ -570,13 +636,9 @@ Entry Wire Line
 	9710 4220 9810 4320
 Entry Wire Line
 	9710 4140 9810 4240
-Wire Bus Line
-	9710 4400 9710 5190
-Text Label 9710 5180 1    60   ~ 0
+Text Label 8500 6210 2    60   ~ 0
 DCC-GROUND
-Wire Bus Line
-	9810 4240 9810 5190
-Text Label 9810 4600 1    60   ~ 0
+Text Label 8480 6510 2    60   ~ 0
 16VAC
 $Comp
 L TERM_06 TB2
@@ -594,7 +656,15 @@ Entry Wire Line
 Wire Bus Line
 	3420 570  4210 570 
 Wire Bus Line
-	4210 570  4210 1700
+	4210 570  4210 860 
+Wire Bus Line
+	4210 860  4210 1160
+Wire Bus Line
+	4210 1160 4210 1450
+Wire Bus Line
+	4210 1450 4210 1600
+Wire Bus Line
+	4210 1600 4210 1700
 Wire Wire Line
 	3620 760  3520 760 
 Wire Wire Line
@@ -602,11 +672,21 @@ Wire Wire Line
 Wire Wire Line
 	3620 1350 3520 1350
 Wire Bus Line
-	3420 570  3420 1250
+	3420 570  3420 660 
 Wire Bus Line
-	3530 6410 3530 3530
+	3420 660  3420 960 
 Wire Bus Line
-	550  1550 550  4690
+	3420 960  3420 1250
+Wire Bus Line
+	3530 6410 3530 3630
+Wire Bus Line
+	3530 3630 3530 3530
+Wire Bus Line
+	550  1550 550  1650
+Wire Bus Line
+	550  1650 550  4590
+Wire Bus Line
+	550  4590 550  4690
 Wire Wire Line
 	1800 1650 1800 5090
 $Comp
@@ -631,20 +711,22 @@ Wire Wire Line
 Wire Wire Line
 	2820 1710 2730 1710
 Wire Wire Line
-	2900 1450 2900 2260
-Wire Wire Line
-	2900 2260 2730 2260
+	2730 2260 3010 2260
 Wire Wire Line
 	2070 2260 2390 2260
 Wire Wire Line
-	2070 1350 2070 2260
+	2070 1350 2070 1910
+Wire Wire Line
+	2070 1910 2070 2260
 Wire Wire Line
 	2390 1910 2070 1910
 Connection ~ 2070 1910
 Wire Wire Line
 	2210 2060 2390 2060
 Wire Wire Line
-	2210 1250 2210 2060
+	2210 1250 2210 1710
+Wire Wire Line
+	2210 1710 2210 2060
 Wire Wire Line
 	2210 1710 2390 1710
 Connection ~ 2210 1710
@@ -654,8 +736,8 @@ Wire Bus Line
 	880  2210 880  3210
 Text Notes 980  600  0    60   ~ 0
 To 120VAC Power Strip
-Text Notes 10180 4100 1    60   ~ 0
-Sub-districts 1-3 correspond to tracks 1-3
+Text Notes 10140 3620 1    60   ~ 0
+Sub-districts 1-3\ncorrespond to tracks 1-3
 Wire Wire Line
 	1550 1250 2210 1250
 Wire Wire Line
@@ -663,7 +745,9 @@ Wire Wire Line
 Wire Wire Line
 	2560 1150 2560 1290
 Wire Bus Line
-	4940 4420 5310 4420
+	4940 4420 5040 4420
+Wire Bus Line
+	5040 4420 5310 4420
 Wire Bus Line
 	5310 4420 5310 3850
 Text Notes 4580 4300 0    60   ~ 0
@@ -691,9 +775,13 @@ Wire Wire Line
 Wire Wire Line
 	6410 2220 6510 2220
 Wire Bus Line
-	5720 2220 5720 2740
+	5720 2220 5720 2320
 Wire Bus Line
-	6610 2220 6610 2750
+	5720 2320 5720 2740
+Wire Bus Line
+	6610 2220 6610 2320
+Wire Bus Line
+	6610 2320 6610 2750
 Wire Wire Line
 	7390 2120 7490 2120
 Wire Wire Line
@@ -762,11 +850,23 @@ Entry Wire Line
 Entry Wire Line
 	7490 4870 7590 4770
 Wire Bus Line
-	6890 4140 6890 5130
+	6890 4140 6890 4550
+Wire Bus Line
+	6890 4550 6890 4970
+Wire Bus Line
+	6890 4970 6890 5130
 Wire Bus Line
 	6890 5130 7590 5130
 Wire Bus Line
-	7590 5130 7590 2220
+	7590 5130 7590 4770
+Wire Bus Line
+	7590 4770 7590 4350
+Wire Bus Line
+	7590 4350 7590 3940
+Wire Bus Line
+	7590 3940 7590 2320
+Wire Bus Line
+	7590 2320 7590 2220
 Wire Bus Line
 	2030 5550 560  5550
 Wire Bus Line
@@ -779,4 +879,92 @@ Text Notes 2020 7290 0    60   ~ 0
 From upstream LNRP
 Text Notes 1520 1150 0    60   ~ 0
 Connect to TR1 chassis.
+$Comp
+L FUSE CB1
+U 1 1 57C4A4E5
+P 3010 1890
+F 0 "CB1" H 3110 1940 50  0000 C CNN
+F 1 "10A" H 2910 1840 50  0000 C CNN
+F 2 "" H 3010 1890 50  0000 C CNN
+F 3 "" H 3010 1890 50  0000 C CNN
+	1    3010 1890
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3010 2260 3010 2140
+Wire Wire Line
+	3010 1450 3010 1640
+Text Notes 3060 1740 0    60   ~ 0
+Panel mounted\ncircuit breaker.
+$Comp
+L M-Junction_Box_No-Tap M?
+U 1 1 57C4B598
+P 8610 5200
+F 0 "M?" H 8680 5040 60  0001 C CNN
+F 1 "M-Junction_Box" H 8620 5120 60  0000 L CNN
+F 2 "" H 8610 5200 60  0000 C CNN
+F 3 "" H 8610 5200 60  0000 C CNN
+	1    8610 5200
+	1    0    0    1   
+$EndComp
+Entry Wire Line
+	9810 5250 9910 5150
+Wire Wire Line
+	9510 5250 9810 5250
+Entry Wire Line
+	9810 5330 9910 5230
+Wire Wire Line
+	9510 5330 9810 5330
+Wire Wire Line
+	9510 5410 9810 5410
+Wire Wire Line
+	9510 5490 9810 5490
+Wire Wire Line
+	9510 5570 9810 5570
+Wire Wire Line
+	9510 5650 9810 5650
+Entry Wire Line
+	9810 5410 9910 5310
+Entry Wire Line
+	9810 5490 9910 5390
+Entry Wire Line
+	9810 5570 9910 5470
+Entry Wire Line
+	9810 5650 9910 5550
+Wire Wire Line
+	9510 5890 9610 5890
+Wire Wire Line
+	9510 5810 9710 5810
+Wire Wire Line
+	9510 5730 9710 5730
+Entry Wire Line
+	9610 5890 9710 5990
+Entry Wire Line
+	9710 5810 9810 5910
+Entry Wire Line
+	9710 5730 9810 5830
+Wire Bus Line
+	9810 4240 9810 4320
+Wire Bus Line
+	9810 4320 9810 4960
+Wire Bus Line
+	9810 4960 8170 4960
+Wire Bus Line
+	9710 4400 9710 4670
+Wire Bus Line
+	9710 4670 7980 4670
+Wire Bus Line
+	9710 5990 9710 6210
+Wire Bus Line
+	9710 6210 7790 6210
+Wire Bus Line
+	9810 5830 9810 5910
+Wire Bus Line
+	9810 5910 9810 6510
+Wire Bus Line
+	9810 6510 7780 6510
+Text Label 8780 4670 2    60   ~ 0
+DCC-GROUND
+Text Label 9000 4960 2    60   ~ 0
+16VAC
 $EndSCHEMATC

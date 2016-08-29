@@ -86,8 +86,8 @@ $Comp
 L Diode_Bridge D1
 U 1 1 57C0B9F1
 P 2690 2790
-F 0 "D1" H 2840 3080 50  0000 C CNN
-F 1 "Rectifier" H 2950 3150 50  0000 C CNN
+F 0 "D1" H 2230 3070 50  0000 C CNN
+F 1 "Rectifier" H 2340 3140 50  0000 C CNN
 F 2 "" H 2690 2790 50  0000 C CNN
 F 3 "" H 2690 2790 50  0000 C CNN
 	1    2690 2790
@@ -759,11 +759,9 @@ Wire Wire Line
 Wire Wire Line
 	2360 2000 2360 2150
 Wire Wire Line
-	2360 2150 3110 2150
+	2360 2150 3180 2150
 Wire Wire Line
-	3110 2150 3110 1250
-Wire Wire Line
-	3110 1250 1550 1250
+	1550 1250 3180 1250
 Wire Wire Line
 	1550 1350 3010 1350
 Wire Wire Line
@@ -832,7 +830,7 @@ Wire Wire Line
 	4800 1900 4320 1900
 Wire Bus Line
 	4220 500  4220 1800
-Text Notes 3180 2160 0    60   ~ 0
+Text Notes 2810 2340 0    60   ~ 0
 Primary wired parallel\nSecondary wired in series
 Text Notes 5510 5770 0    60   ~ 0
 To 120 VAC Power Strip
@@ -1005,4 +1003,21 @@ Text Notes 1700 1150 0    60   ~ 0
 Connect to TR1 chassis.
 Text Notes 3990 5860 1    60   ~ 0
 To downstream boosters.
+$Comp
+L FUSE CB1
+U 1 1 57C49525
+P 3180 1770
+F 0 "CB1" H 3280 1820 50  0000 C CNN
+F 1 "10A" H 3080 1720 50  0000 C CNN
+F 2 "" H 3180 1770 50  0000 C CNN
+F 3 "" H 3180 1770 50  0000 C CNN
+	1    3180 1770
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3180 2150 3180 2020
+Wire Wire Line
+	3180 1250 3180 1520
+Text Notes 3290 1940 0    60   ~ 0
+Panel mounted\ncircuit breaker.
 $EndSCHEMATC

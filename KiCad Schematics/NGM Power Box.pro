@@ -1,4 +1,4 @@
-update=8/26/2016 4:44:57 PM
+update=8/29/2016 4:28:15 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,13 @@ LibName32=C:/Program Files/KiCad/share/kicad/library/contrib_symbols_dl1eic/Symb
 LibName33=Libraries/m-junction_box
 LibName34=Libraries/NGM-Custom
 LibName35=Libraries/relay_3pdt
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
