@@ -422,7 +422,7 @@ Wire Wire Line
 Wire Wire Line
 	5160 3530 4520 3530
 Wire Bus Line
-	1320 6410 3530 6410
+	3530 6410 1320 6410
 Wire Wire Line
 	3740 3430 3630 3430
 Wire Wire Line
@@ -562,9 +562,9 @@ Entry Wire Line
 	9710 4220 9810 4320
 Entry Wire Line
 	9710 4140 9810 4240
-Text Label 8500 6210 2    60   ~ 0
+Text Label 9050 6210 2    60   ~ 0
 DCC-GROUND
-Text Label 8480 6510 2    60   ~ 0
+Text Label 8560 6510 2    60   ~ 0
 16VAC
 $Comp
 L TERM_06 TB2
@@ -592,7 +592,7 @@ Wire Wire Line
 Wire Bus Line
 	3420 570  3420 1250
 Wire Bus Line
-	3530 6410 3530 3530
+	3530 3530 3530 6410
 Wire Bus Line
 	550  1550 550  4690
 Wire Wire Line
@@ -649,9 +649,9 @@ Wire Wire Line
 Wire Wire Line
 	2560 1150 2560 1290
 Wire Bus Line
-	5310 4420 4940 4420
+	4940 4420 5310 4420
 Wire Bus Line
-	5310 3590 5310 4420
+	5310 4420 5310 3590
 Text Notes 4580 4300 0    60   ~ 0
 To local UP5s
 Text Notes 3630 4510 0    60   ~ 0
@@ -750,15 +750,15 @@ Entry Wire Line
 Wire Bus Line
 	6890 4140 6890 5130
 Wire Bus Line
-	6890 5130 7590 5130
+	7590 5130 6890 5130
 Wire Bus Line
-	7590 5130 7590 2220
+	7590 2220 7590 5130
 Wire Bus Line
-	2030 5550 560  5550
+	2030 5550 1140 5550
 Wire Bus Line
-	560  5550 560  7160
+	1140 5550 1140 7160
 Wire Bus Line
-	560  7160 3490 7160
+	1140 7160 3490 7160
 Text Label 1620 7170 0    60   ~ 0
 Protected_LocoNet
 Text Notes 2020 7290 0    60   ~ 0
@@ -840,15 +840,55 @@ Wire Bus Line
 Wire Bus Line
 	9710 5990 9710 6210
 Wire Bus Line
-	9710 6210 7790 6210
+	9710 6210 8370 6210
 Wire Bus Line
-	9810 5830 9810 6510
+	9810 6510 9810 5830
 Wire Bus Line
-	9810 6510 7780 6510
+	7780 6510 9810 6510
 Text Label 8780 4670 2    60   ~ 0
 DCC-GROUND
 Text Label 9000 4960 2    60   ~ 0
 16VAC
 Text Notes 5470 4960 0    60   ~ 0
 To 120 VAC\nPower Strip
+$Comp
+L FUSE 2A
+U 1 1 57C5832F
+P 6840 6410
+F 0 "2A" H 6940 6460 50  0000 C CNN
+F 1 "CB2" H 6740 6360 50  0000 C CNN
+F 2 "" H 6840 6410 50  0000 C CNN
+F 3 "" H 6840 6410 50  0000 C CNN
+	1    6840 6410
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7780 6410 7880 6510
+Entry Wire Line
+	7680 6410 7780 6510
+Wire Wire Line
+	7780 6410 7780 6200
+Wire Wire Line
+	7780 6200 6010 6200
+Wire Wire Line
+	7090 6410 7680 6410
+Wire Wire Line
+	6590 6410 6010 6410
+Entry Wire Line
+	5910 6510 6010 6410
+Entry Wire Line
+	5910 6300 6010 6200
+Wire Bus Line
+	5910 6300 5910 7810
+Text Label 5910 6800 3    60   ~ 0
+16VAC
+Text Notes 6560 6680 0    60   ~ 0
+Panel mounted\ncircuit breaker.
+Wire Bus Line
+	8170 4960 8170 6510
+Connection ~ 8170 6510
+Wire Bus Line
+	5910 7810 550  7810
+Wire Bus Line
+	550  7810 550  4680
 $EndSCHEMATC
