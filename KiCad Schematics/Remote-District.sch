@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "District 1 Power Box"
 Date "2016-08-27"
-Rev ""
+Rev "2"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -60,52 +60,24 @@ F 3 "" H 4650 6030 60  0000 C CNN
 	1    4560 5800
 	0    1    -1   0   
 $EndComp
-$Comp
-L TERM_08 TB1
-U 1 1 57C1C741
-P 1300 1300
-F 0 "TB1" H 1300 1750 50  0000 C CNN
-F 1 "TERM_08" H 1320 850 50  0000 C CNN
-F 2 "" H 1300 100 50  0000 C CNN
-F 3 "" H 1300 100 50  0000 C CNN
-	1    1300 1300
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
-	550  1250 650  1350
+	750  1150 850  1250
 Entry Wire Line
-	550  1150 650  1250
-Entry Wire Line
-	550  1050 650  1150
-Entry Wire Line
-	750  950  850  1050
-Entry Wire Line
-	750  850  850  950 
-Text Label 750  750  0    60   ~ 0
+	750  1050 850  1150
+Text Label 750  950  0    60   ~ 0
 12VDC
-Text Label 550  600  0    60   ~ 0
+Text Label 2680 670  0    60   ~ 0
 120VAC
 $Comp
 L Fan M1
 U 1 1 57C1C742
-P 2700 850
-F 0 "M1" V 2990 1310 60  0000 C CNN
-F 1 "Fan" V 2900 1250 60  0000 L CNN
-F 2 "" H 2700 850 60  0000 C CNN
-F 3 "" H 2700 850 60  0000 C CNN
-	1    2700 850 
+P 1990 1050
+F 0 "M1" V 2280 1510 60  0000 C CNN
+F 1 "Fan" V 2190 1450 60  0000 L CNN
+F 2 "" H 1990 1050 60  0000 C CNN
+F 3 "" H 1990 1050 60  0000 C CNN
+	1    1990 1050
 	0    1    1    0   
-$EndComp
-$Comp
-L Earth #PWR?
-U 1 1 57C1C743
-P 2560 1290
-F 0 "#PWR?" H 2560 1040 50  0001 C CNN
-F 1 "Earth" H 2560 1140 50  0001 C CNN
-F 2 "" H 2560 1290 50  0000 C CNN
-F 3 "" H 2560 1290 50  0000 C CNN
-	1    2560 1290
-	1    0    0    -1  
 $EndComp
 Entry Wire Line
 	550  1550 650  1450
@@ -292,29 +264,11 @@ Entry Wire Line
 Entry Wire Line
 	3530 3630 3630 3530
 Wire Wire Line
-	1050 950  850  950 
+	1050 1150 850  1150
 Wire Wire Line
-	1050 1150 650  1150
-Wire Wire Line
-	1050 1250 650  1250
-Wire Wire Line
-	1050 1350 650  1350
+	1050 1250 850  1250
 Wire Bus Line
-	550  600  550  1250
-Wire Wire Line
-	1050 1050 850  1050
-Wire Bus Line
-	750  650  750  950 
-Wire Wire Line
-	1550 950  2500 950 
-Wire Wire Line
-	1550 1050 2500 1050
-Wire Wire Line
-	1550 1350 2070 1350
-Wire Wire Line
-	1550 1450 3010 1450
-Wire Wire Line
-	1550 1550 2820 1550
+	750  850  750  1150
 Wire Wire Line
 	1050 1450 650  1450
 Wire Wire Line
@@ -422,7 +376,7 @@ Wire Wire Line
 Wire Wire Line
 	5160 3530 4520 3530
 Wire Bus Line
-	3530 6410 1320 6410
+	1320 6410 3530 6410
 Wire Wire Line
 	3740 3430 3630 3430
 Wire Wire Line
@@ -592,62 +546,23 @@ Wire Wire Line
 Wire Bus Line
 	3420 570  3420 1250
 Wire Bus Line
-	3530 3530 3530 6410
+	3530 6410 3530 3530
 Wire Bus Line
 	550  1550 550  4690
 Wire Wire Line
 	1800 1650 1800 5090
-$Comp
-L TRANSFORMER_MCI_4-49-8016 TR1
-U 1 1 57C213DC
-P 2560 1970
-F 0 "TR1" H 2560 2280 50  0000 C CNN
-F 1 "16VCT" H 2560 1570 50  0000 C CNN
-F 2 "" H 2560 1970 60  0000 C CNN
-F 3 "" H 2560 1970 60  0000 C CNN
-	1    2560 1970
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2730 1910 2830 1910
+	2820 2000 2730 2000
 Wire Wire Line
-	2830 1910 2830 2060
-Wire Wire Line
-	2830 2060 2730 2060
-Wire Wire Line
-	2820 1550 2820 1710
-Wire Wire Line
-	2820 1710 2730 1710
-Wire Wire Line
-	2730 2260 3010 2260
-Wire Wire Line
-	2070 2260 2390 2260
-Wire Wire Line
-	2070 1350 2070 2260
-Wire Wire Line
-	2390 1910 2070 1910
-Connection ~ 2070 1910
-Wire Wire Line
-	2210 2060 2390 2060
-Wire Wire Line
-	2210 1250 2210 2060
-Wire Wire Line
-	2210 1710 2390 1710
-Connection ~ 2210 1710
-Text Notes 1990 2610 0    60   ~ 0
+	2730 2550 3010 2550
+Text Notes 1990 2900 0    60   ~ 0
 Primary wired parallel\nSecondary wired in series
 Wire Bus Line
 	880  2210 880  3210
-Text Notes 1090 670  0    60   ~ 0
+Text Notes 1470 750  0    60   ~ 0
 To 120 VAC\nPower Strip
 Text Notes 8960 2920 0    60   ~ 0
 Sub-districts 1-3\ncorrespond to\ntracks 1-3.
-Wire Wire Line
-	1550 1250 2210 1250
-Wire Wire Line
-	1550 1150 2560 1150
-Wire Wire Line
-	2560 1150 2560 1290
 Wire Bus Line
 	4940 4420 5310 4420
 Wire Bus Line
@@ -750,9 +665,9 @@ Entry Wire Line
 Wire Bus Line
 	6890 4140 6890 5130
 Wire Bus Line
-	7590 5130 6890 5130
+	6890 5130 7590 5130
 Wire Bus Line
-	7590 2220 7590 5130
+	7590 5130 7590 2220
 Wire Bus Line
 	2030 5550 1140 5550
 Wire Bus Line
@@ -763,24 +678,20 @@ Text Label 1620 7170 0    60   ~ 0
 Protected_LocoNet
 Text Notes 2020 7290 0    60   ~ 0
 From upstream LNRP
-Text Notes 1520 1150 0    60   ~ 0
-Connect to TR1 chassis.
 $Comp
 L FUSE CB1
 U 1 1 57C4A4E5
-P 3010 1890
-F 0 "CB1" H 3110 1940 50  0000 C CNN
-F 1 "10A" H 2910 1840 50  0000 C CNN
-F 2 "" H 3010 1890 50  0000 C CNN
-F 3 "" H 3010 1890 50  0000 C CNN
-	1    3010 1890
+P 3010 2180
+F 0 "CB1" V 3010 2330 50  0000 C CNN
+F 1 "10A" V 3080 2330 50  0000 C CNN
+F 2 "" H 3010 2180 50  0000 C CNN
+F 3 "" H 3010 2180 50  0000 C CNN
+	1    3010 2180
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3010 2260 3010 2140
-Wire Wire Line
-	3010 1450 3010 1640
-Text Notes 3060 1740 0    60   ~ 0
+	3010 2550 3010 2430
+Text Notes 3060 2030 0    60   ~ 0
 Panel mounted\ncircuit breaker.
 $Comp
 L M-Junction_Box_No-Tap M?
@@ -891,4 +802,70 @@ Wire Bus Line
 	5910 7810 550  7810
 Wire Bus Line
 	550  7810 550  4680
+$Comp
+L TRANSFORMER_VPS16 TR1
+U 1 1 57E184F7
+P 2560 2260
+F 0 "TR1" H 2560 2570 50  0000 C CNN
+F 1 "VPS16" H 2560 1860 50  0000 C CNN
+F 2 "" H 2560 2260 60  0000 C CNN
+F 3 "" H 2560 2260 60  0000 C CNN
+	1    2560 2260
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2820 2350 2730 2350
+Connection ~ 2820 2000
+Wire Wire Line
+	2730 2200 2880 2200
+Wire Wire Line
+	2880 2200 2880 2550
+Connection ~ 2880 2550
+Wire Wire Line
+	2390 2350 2340 2350
+Wire Wire Line
+	2340 2350 2340 2200
+Wire Wire Line
+	2340 2200 2390 2200
+Wire Wire Line
+	2210 2000 2390 2000
+Wire Wire Line
+	2070 2550 2390 2550
+Wire Wire Line
+	2820 1520 2820 2350
+Wire Wire Line
+	1550 1450 2210 1450
+Wire Wire Line
+	2210 1450 2210 2000
+Wire Wire Line
+	1550 1550 2070 1550
+Wire Wire Line
+	2070 1550 2070 2550
+Wire Wire Line
+	1550 1150 1790 1150
+Wire Wire Line
+	1550 1250 1790 1250
+Entry Wire Line
+	2720 1420 2820 1520
+Wire Wire Line
+	3010 1930 3010 1520
+Entry Wire Line
+	2910 1420 3010 1520
+Wire Bus Line
+	2910 1420 2660 1420
+Wire Bus Line
+	2660 1420 2660 620 
+$Comp
+L TERM_06 TB1
+U 1 1 57E2236E
+P 1300 1400
+F 0 "TB1" H 1300 1780 50  0000 C CNN
+F 1 "TERM_06" H 1300 1020 50  0000 C CNN
+F 2 "" H 1300 200 50  0000 C CNN
+F 3 "" H 1300 200 50  0000 C CNN
+	1    1300 1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1350
+NoConn ~ 1050 1350
 $EndSCHEMATC

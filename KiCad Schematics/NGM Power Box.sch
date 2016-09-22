@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-08-27"
-Rev ""
+Rev "2"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -60,5 +60,11 @@ S 1300 2200 1240 370
 U 57C1C56F
 F0 "Remote District Box" 60
 F1 "Remote-District.sch" 60
+$EndSheet
+$Sheet
+S 2970 1550 1140 290 
+U 57E26D35
+F0 "District 1 alt" 60
+F1 "District 1 alt.sch" 60
 $EndSheet
 $EndSCHEMATC

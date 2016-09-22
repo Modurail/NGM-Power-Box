@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "District 1 Power Box"
 Date "2016-08-27"
-Rev ""
+Rev "2"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -70,17 +70,6 @@ F 2 "" H 2170 3620 60  0000 C CNN
 F 3 "" H 2170 3620 60  0000 C CNN
 	1    2180 3420
 	0    1    1    0   
-$EndComp
-$Comp
-L TRANSFORMER_MCI_4-49-8016 TR1
-U 1 1 57C0B936
-P 2620 1830
-F 0 "TR1" V 2620 2270 50  0000 C CNN
-F 1 "16VCT" V 2550 2220 50  0000 C CNN
-F 2 "" H 2620 1830 60  0000 C CNN
-F 3 "" H 2620 1830 60  0000 C CNN
-	1    2620 1830
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Diode_Bridge D1
@@ -507,8 +496,6 @@ Wire Wire Line
 	1550 1050 1660 1050
 Wire Wire Line
 	1550 1450 2910 1450
-Wire Wire Line
-	1550 1550 2710 1550
 Connection ~ 2080 1550
 Wire Wire Line
 	2000 1450 2000 3240
@@ -727,21 +714,7 @@ Wire Wire Line
 Wire Bus Line
 	9690 910  9690 1720
 Wire Wire Line
-	2360 1550 2360 1660
-Wire Wire Line
-	2560 1450 2560 1660
-Wire Wire Line
-	2710 1550 2710 1660
-Connection ~ 2360 1550
-Wire Wire Line
 	2910 1450 2910 1660
-Connection ~ 2560 1450
-Wire Wire Line
-	2560 2000 2560 2100
-Wire Wire Line
-	2560 2100 2710 2100
-Wire Wire Line
-	2710 2100 2710 2000
 Wire Wire Line
 	2360 2000 2360 2150
 Wire Wire Line
@@ -750,12 +723,6 @@ Wire Wire Line
 	1550 1250 3180 1250
 Wire Wire Line
 	1550 1350 3010 1350
-Wire Wire Line
-	3010 1350 3010 2100
-Wire Wire Line
-	3010 2100 2910 2100
-Wire Wire Line
-	2910 2100 2910 2000
 Wire Wire Line
 	1550 1150 3290 1150
 Wire Wire Line
@@ -993,8 +960,8 @@ $Comp
 L FUSE CB1
 U 1 1 57C49525
 P 3180 1770
-F 0 "CB1" H 3280 1820 50  0000 C CNN
-F 1 "10A" H 3080 1720 50  0000 C CNN
+F 0 "CB1" V 3290 1860 50  0000 C CNN
+F 1 "10A" V 3360 1860 50  0000 C CNN
 F 2 "" H 3180 1770 50  0000 C CNN
 F 3 "" H 3180 1770 50  0000 C CNN
 	1    3180 1770
@@ -1004,7 +971,7 @@ Wire Wire Line
 	3180 2150 3180 2020
 Wire Wire Line
 	3180 1250 3180 1520
-Text Notes 3290 1940 0    60   ~ 0
+Text Notes 3290 1840 0    60   ~ 0
 Panel mounted\ncircuit breaker.
 $Comp
 L M-Junction_Box_No-Tap M?
@@ -1077,4 +1044,37 @@ Wire Bus Line
 	9910 2020 9910 5550
 Text Notes 8820 2870 0    60   ~ 0
 Sub-districts 1-4\ncorrespond to discreet\nyard sections.
+$Comp
+L TRANSFORMER_VPS16 TR1
+U 1 1 57E17910
+P 2620 1830
+F 0 "TR1" V 2620 2210 50  0000 C CNN
+F 1 "VPS16" V 2550 2230 50  0000 C CNN
+F 2 "" H 2620 1830 60  0000 C CNN
+F 3 "" H 2620 1830 60  0000 C CNN
+	1    2620 1830
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2710 2000 2710 2150
+Connection ~ 2710 2150
+Wire Wire Line
+	3010 1350 3010 2070
+Wire Wire Line
+	3010 2070 2560 2070
+Wire Wire Line
+	2560 2070 2560 2000
+Wire Wire Line
+	2910 2000 2910 2070
+Connection ~ 2910 2070
+Wire Wire Line
+	1550 1550 2360 1550
+Wire Wire Line
+	2360 1550 2360 1660
+Wire Wire Line
+	2560 1660 2560 1550
+Wire Wire Line
+	2560 1550 2710 1550
+Wire Wire Line
+	2710 1550 2710 1660
 $EndSCHEMATC
