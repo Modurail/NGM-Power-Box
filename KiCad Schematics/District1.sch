@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 2 6
 Title "District 1 Power Box"
-Date "2016-08-27"
-Rev "2"
+Date "2016-09-30"
+Rev "4"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""

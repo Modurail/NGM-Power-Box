@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 4
+Sheet 3 6
 Title "District 1 Power Box"
-Date "2016-08-27"
-Rev "2"
+Date "2016-09-30"
+Rev "4"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -868,4 +868,6 @@ F 3 "" H 1300 200 50  0000 C CNN
 $EndComp
 NoConn ~ 1550 1350
 NoConn ~ 1050 1350
+Text Notes 3930 3820 0    60   ~ 0
+(Optional)
 $EndSCHEMATC

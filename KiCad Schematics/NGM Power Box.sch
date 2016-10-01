@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title "NGM Power and LocoNet Power Boxes"
-Date "2016-08-27"
-Rev "2"
+Date "2016-09-30"
+Rev "4"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -66,5 +66,17 @@ S 2970 1550 1140 290
 U 57E26D35
 F0 "District 1 alt" 60
 F1 "District 1 alt.sch" 60
+$EndSheet
+$Sheet
+S 2990 2210 1110 360 
+U 57EBE249
+F0 "District 1&2" 60
+F1 "District 1-2.sch" 60
+$EndSheet
+$Sheet
+S 1370 2910 1140 500 
+U 57EED52C
+F0 "PSX-4 Yard Mount" 60
+F1 "PSX-4.sch" 60
 $EndSheet
 $EndSCHEMATC

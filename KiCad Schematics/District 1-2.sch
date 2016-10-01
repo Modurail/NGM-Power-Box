@@ -1,0 +1,821 @@
+EESchema Schematic File Version 2
+LIBS:NGM Power Box-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ngm_components
+LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:m-junction_box
+LIBS:NGM-Custom
+LIBS:relay_3pdt
+LIBS:NGM Power Box-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 5 6
+Title "District 1 Power Box"
+Date "2016-09-30"
+Rev "4"
+Comp "North Georgia Modurail"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TERM_08 TB8
+U 1 1 57EBE4EB
+P 1300 1300
+F 0 "TB8" H 1300 1750 50  0000 C CNN
+F 1 "TERM_08" H 1320 850 50  0000 C CNN
+F 2 "" H 1300 100 50  0000 C CNN
+F 3 "" H 1300 100 50  0000 C CNN
+	1    1300 1300
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	550  1250 650  1350
+Entry Wire Line
+	550  1150 650  1250
+Entry Wire Line
+	550  1050 650  1150
+Entry Wire Line
+	750  950  850  1050
+Entry Wire Line
+	750  850  850  950 
+Text Label 750  750  0    60   ~ 0
+12VDC
+Text Label 550  600  0    60   ~ 0
+120VAC
+$Comp
+L Fan M1
+U 1 1 57EBE4EC
+P 2340 650
+F 0 "M1" V 2630 1110 60  0000 C CNN
+F 1 "Fan" V 2540 1050 60  0000 L CNN
+F 2 "" H 2340 650 60  0000 C CNN
+F 3 "" H 2340 650 60  0000 C CNN
+	1    2340 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 57EBE4ED
+P 3290 1260
+F 0 "#PWR?" H 3290 1010 50  0001 C CNN
+F 1 "Earth" H 3290 1110 50  0001 C CNN
+F 2 "" H 3290 1260 50  0000 C CNN
+F 3 "" H 3290 1260 50  0000 C CNN
+	1    3290 1260
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	550  1550 650  1450
+Entry Wire Line
+	550  4580 650  4480
+Text Label 990  7110 0    60   ~ 0
+16VAC
+Text Label 1800 2400 1    60   ~ 0
+DCC-GROUND
+Entry Wire Line
+	5200 1010 5300 910 
+Entry Wire Line
+	5300 1010 5400 910 
+Entry Wire Line
+	6150 1010 6250 910 
+Entry Wire Line
+	6250 1010 6350 910 
+Text Label 6880 910  0    60   ~ 0
+Sub-District_Bus
+Entry Wire Line
+	7130 1010 7230 910 
+Entry Wire Line
+	7230 1010 7330 910 
+Entry Wire Line
+	7990 1820 8090 1920
+Entry Wire Line
+	7990 1920 8090 2020
+Entry Wire Line
+	7990 2020 8090 2120
+Entry Wire Line
+	7990 2120 8090 2220
+Entry Wire Line
+	7990 2220 8090 2320
+Entry Wire Line
+	7990 2320 8090 2420
+Entry Wire Line
+	980  2110 1080 2210
+Text Label 1080 2830 1    60   ~ 0
+DCC-GROUND
+Entry Wire Line
+	8960 2420 9060 2520
+Entry Wire Line
+	8960 2320 9060 2420
+Entry Wire Line
+	8960 2220 9060 2320
+Entry Wire Line
+	8960 2120 9060 2220
+Entry Wire Line
+	8960 2020 9060 2120
+Entry Wire Line
+	8960 1920 9060 2020
+Text Label 9060 3350 1    60   ~ 0
+SD_1-3
+Text Notes 940  610  0    60   ~ 0
+To 120 VAC Power Strip
+Wire Wire Line
+	1050 950  850  950 
+Wire Wire Line
+	1050 1150 650  1150
+Wire Wire Line
+	1050 1250 650  1250
+Wire Wire Line
+	1050 1350 650  1350
+Wire Bus Line
+	550  600  550  1250
+Wire Wire Line
+	1050 1050 850  1050
+Wire Bus Line
+	750  650  750  950 
+Wire Wire Line
+	1550 950  1600 950 
+Wire Wire Line
+	1550 1050 1660 1050
+Wire Wire Line
+	1550 1450 2560 1450
+Wire Wire Line
+	1050 1450 650  1450
+Wire Wire Line
+	1050 1650 980  1650
+Wire Wire Line
+	980  1650 980  2110
+Wire Bus Line
+	5300 910  7990 910 
+Wire Wire Line
+	8160 1920 8090 1920
+Wire Wire Line
+	8160 2020 8090 2020
+Wire Wire Line
+	8160 2120 8090 2120
+Wire Wire Line
+	8160 2220 8090 2220
+Wire Wire Line
+	8160 2320 8090 2320
+Wire Wire Line
+	8160 2420 8090 2420
+Wire Wire Line
+	8660 1920 8960 1920
+Wire Wire Line
+	8660 2020 8960 2020
+Wire Wire Line
+	8660 2120 8960 2120
+Wire Wire Line
+	8660 2220 8960 2220
+Wire Wire Line
+	8660 2320 8960 2320
+Wire Wire Line
+	8660 2420 8960 2420
+Wire Wire Line
+	2560 1450 2560 1660
+Wire Wire Line
+	2360 2000 2360 2150
+Wire Wire Line
+	2360 2150 2870 2150
+Wire Wire Line
+	1550 1250 2870 1250
+Wire Wire Line
+	1550 1350 2700 1350
+Wire Wire Line
+	1550 1150 3290 1150
+Wire Wire Line
+	3290 1150 3290 1260
+Wire Wire Line
+	2140 750  1600 750 
+Wire Wire Line
+	1600 750  1600 950 
+Wire Wire Line
+	1660 1050 1660 850 
+Wire Wire Line
+	1660 850  2140 850 
+Text Notes 1700 1150 0    60   ~ 0
+Connect to TR1 chassis.
+$Comp
+L FUSE CB1
+U 1 1 57EBE4FE
+P 2870 1750
+F 0 "CB1" V 2800 1730 50  0000 C CNN
+F 1 "10A" V 2950 1770 50  0000 C CNN
+F 2 "" H 2870 1750 50  0000 C CNN
+F 3 "" H 2870 1750 50  0000 C CNN
+	1    2870 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2870 2150 2870 2000
+Wire Wire Line
+	2870 1250 2870 1500
+$Comp
+L M-Junction_Box_No-Tap M?
+U 1 1 57EBE4FF
+P 10360 3880
+F 0 "M?" H 10430 3720 60  0001 C CNN
+F 1 "M-Junction_Box" H 10370 3800 60  0000 L CNN
+F 2 "" H 10360 3880 60  0000 C CNN
+F 3 "" H 10360 3880 60  0000 C CNN
+	1    10360 3880
+	-1   0    0    1   
+$EndComp
+Entry Wire Line
+	9160 3930 9060 3830
+Entry Wire Line
+	9160 4010 9060 3910
+Entry Wire Line
+	9160 4090 9060 3990
+Entry Wire Line
+	9160 4170 9060 4070
+Entry Wire Line
+	9160 4250 9060 4150
+Entry Wire Line
+	9160 4330 9060 4230
+Wire Wire Line
+	9460 3930 9160 3930
+Wire Wire Line
+	9460 4010 9160 4010
+Wire Wire Line
+	9460 4090 9160 4090
+Wire Wire Line
+	9460 4170 9160 4170
+Wire Wire Line
+	9460 4250 9160 4250
+Wire Wire Line
+	9460 4330 9160 4330
+Entry Wire Line
+	9360 4570 9260 4670
+Entry Wire Line
+	9260 4490 9160 4590
+Entry Wire Line
+	9260 4410 9160 4510
+Wire Wire Line
+	9460 4570 9360 4570
+Wire Wire Line
+	9460 4490 9260 4490
+Wire Wire Line
+	9460 4410 9260 4410
+Text Label 9240 6270 2    60   ~ 0
+DCC-GROUND
+Text Label 7440 5690 2    60   ~ 0
+16VAC
+Wire Wire Line
+	2700 1350 2700 2070
+Wire Wire Line
+	2700 2070 2560 2070
+Wire Wire Line
+	2560 2070 2560 2000
+Wire Wire Line
+	1550 1550 2360 1550
+Wire Wire Line
+	2360 1550 2360 1660
+Wire Wire Line
+	1550 1650 1800 1650
+$Comp
+L TRANSFORMER_MCI_4-06-8016 TR1
+U 1 1 57EBE500
+P 2460 1830
+F 0 "TR1" V 2550 2080 50  0000 C CNN
+F 1 "16 VAC" V 2460 2110 50  0000 C CNN
+F 2 "" H 2460 1670 60  0000 C CNN
+F 3 "" H 2460 1670 60  0000 C CNN
+	1    2460 1830
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2460 1660
+$Comp
+L AHE220PS19 PS1
+U 1 1 57EBE501
+P 2550 2600
+F 0 "PS1" H 2550 2760 60  0000 C CNN
+F 1 "19 VDC" H 2550 2440 60  0000 C CNN
+F 2 "" H 2430 2690 60  0000 C CNN
+F 3 "" H 2430 2690 60  0000 C CNN
+	1    2550 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L TERM_02 TB2
+U 1 1 57EBE502
+P 1310 2970
+F 0 "TB2" V 1310 3140 50  0000 C CNN
+F 1 "TERM_02" V 1400 3240 50  0000 C CNN
+F 2 "" H 1310 1520 50  0000 C CNN
+F 3 "" H 1310 1520 50  0000 C CNN
+	1    1310 2970
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2280 2560 1260 2560
+Wire Wire Line
+	1260 2560 1260 2720
+Wire Wire Line
+	2280 2640 1360 2640
+Wire Wire Line
+	1360 2640 1360 2720
+Wire Wire Line
+	2810 2540 3060 2540
+Wire Wire Line
+	2810 2600 3060 2600
+Wire Wire Line
+	2810 2660 3060 2660
+Entry Wire Line
+	3060 2540 3160 2440
+Entry Wire Line
+	3060 2600 3160 2500
+Entry Wire Line
+	3060 2660 3160 2560
+Wire Bus Line
+	3160 2180 3160 2560
+Text Label 3160 2180 0    60   ~ 0
+120VAC
+Text Notes 3190 2280 0    60   ~ 0
+To 120 VAC Power Strip
+$Comp
+L FUSE CB2
+U 1 1 57EBE503
+P 800 3940
+F 0 "CB2" V 730 3910 50  0000 C CNN
+F 1 "2A" V 870 3940 50  0000 C CNN
+F 2 "" H 800 3940 50  0000 C CNN
+F 3 "" H 800 3940 50  0000 C CNN
+	1    800  3940
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	800  3690 800  1550
+Wire Wire Line
+	800  1550 1050 1550
+Wire Bus Line
+	550  1550 550  7110
+Wire Wire Line
+	800  4190 800  4480
+Wire Wire Line
+	800  4480 650  4480
+$Comp
+L PSX-4 PSX?
+U 1 1 57EBF4C3
+P 5360 2340
+F 0 "PSX?" H 5390 2820 60  0001 L CNN
+F 1 "PSX-4A" V 5910 2380 60  0000 L CNN
+F 2 "" H 5350 2330 60  0000 C CNN
+F 3 "" H 5350 2330 60  0000 C CNN
+	1    5360 2340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PSX-4 PSX?
+U 2 1 57EBF538
+P 6310 2340
+F 0 "PSX?" H 6340 2820 60  0001 L CNN
+F 1 "PSX-4B" V 6860 2370 60  0000 L CNN
+F 2 "" H 6300 2330 60  0000 C CNN
+F 3 "" H 6300 2330 60  0000 C CNN
+	2    6310 2340
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PSX-4 PSX?
+U 3 1 57EBF59B
+P 7290 2340
+F 0 "PSX?" H 7320 2820 60  0001 L CNN
+F 1 "PSX-4C" V 7840 2370 60  0000 L CNN
+F 2 "" H 7280 2330 60  0000 C CNN
+F 3 "" H 7280 2330 60  0000 C CNN
+	3    7290 2340
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 1010 5200 1110
+Wire Wire Line
+	5300 1110 5300 1010
+Wire Wire Line
+	6150 1010 6150 1110
+Wire Wire Line
+	6250 1110 6250 1010
+Wire Wire Line
+	7130 1110 7130 1010
+Wire Wire Line
+	7230 1110 7230 1010
+Wire Bus Line
+	1080 2220 1080 6500
+Wire Wire Line
+	2300 3350 1360 3350
+Wire Wire Line
+	2400 3300 1260 3300
+Wire Wire Line
+	1260 3220 1260 6200
+Wire Wire Line
+	2120 4820 2120 4670
+Wire Wire Line
+	2120 4670 1260 4670
+Connection ~ 1260 3300
+Connection ~ 1360 3350
+Wire Wire Line
+	2020 4820 2020 4740
+Wire Wire Line
+	1360 4740 2020 4740
+Wire Wire Line
+	1360 3220 1360 4740
+Wire Wire Line
+	2020 6330 2020 6270
+Wire Wire Line
+	2020 6270 1360 6270
+Wire Wire Line
+	1360 6270 1360 4730
+Connection ~ 1360 4730
+Wire Wire Line
+	2120 6330 2120 6200
+Wire Wire Line
+	2120 6200 1260 6200
+Connection ~ 1260 4670
+Wire Wire Line
+	2220 6330 2220 6270
+Wire Wire Line
+	2220 6270 2320 6270
+Wire Wire Line
+	2320 6270 2320 6330
+$Comp
+L TERM_07 C1
+U 1 1 57EF9141
+P 2950 3740
+F 0 "C1" V 2700 4400 50  0001 C CNN
+F 1 "DCS 240" V 2770 4280 50  0000 C CNN
+F 2 "" H 2950 2540 50  0000 C CNN
+F 3 "" H 2950 2540 50  0000 C CNN
+	1    2950 3740
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 3300 2400 3490
+Wire Wire Line
+	2300 3350 2300 3490
+Wire Wire Line
+	1800 1650 1800 6120
+NoConn ~ 2800 3490
+NoConn ~ 2900 3490
+$Comp
+L TERM_07_DB C2
+U 1 1 57EFB54C
+P 2670 5070
+F 0 "C2" V 2400 5730 50  0001 C CNN
+F 1 "DB 200 (District 2)" V 2480 5410 50  0000 C CNN
+F 2 "" H 2670 3870 50  0000 C CNN
+F 3 "" H 2670 3870 50  0000 C CNN
+	1    2670 5070
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2220 4820 2220 4740
+Wire Wire Line
+	2220 4740 2320 4740
+Wire Wire Line
+	2320 4740 2320 4820
+Wire Wire Line
+	1800 4580 2420 4580
+Wire Wire Line
+	2420 4580 2420 4820
+$Comp
+L TERM_07_DB C3
+U 1 1 57EFC13D
+P 2670 6580
+F 0 "C3" V 2410 7240 50  0001 C CNN
+F 1 "DB 200 (District 1)" V 2490 6920 50  0000 C CNN
+F 2 "" H 2670 5380 50  0000 C CNN
+F 3 "" H 2670 5380 50  0000 C CNN
+	1    2670 6580
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 6120 2420 6120
+Wire Wire Line
+	2420 6120 2420 6330
+Connection ~ 1800 4580
+$Comp
+L TBLOCK TB?
+U 1 1 57EFD800
+P 3400 4690
+F 0 "TB?" H 3400 4840 50  0001 C CNN
+F 1 "TB4" H 3400 4840 50  0000 C CNN
+F 2 "" H 3400 3240 50  0000 C CNN
+F 3 "" H 3400 3240 50  0000 C CNN
+	1    3400 4690
+	1    0    0    -1  
+$EndComp
+$Comp
+L TBLOCK TB?
+U 2 1 57EFD8B3
+P 3400 4790
+F 0 "TB?" H 3400 4940 50  0001 C CNN
+F 1 "TBLOCK" H 3420 5010 50  0001 C CNN
+F 2 "" H 3400 3340 50  0000 C CNN
+F 3 "" H 3400 3340 50  0000 C CNN
+	2    3400 4790
+	1    0    0    -1  
+$EndComp
+$Comp
+L TBLOCK TB?
+U 3 1 57EFD910
+P 3400 4890
+F 0 "TB?" H 3400 5040 50  0001 C CNN
+F 1 "TBLOCK" H 3420 5110 50  0001 C CNN
+F 2 "" H 3400 3440 50  0000 C CNN
+F 3 "" H 3400 3440 50  0000 C CNN
+	3    3400 4890
+	1    0    0    -1  
+$EndComp
+$Comp
+L TBLOCK TB?
+U 4 1 57EFD959
+P 3400 4990
+F 0 "TB?" H 3400 5140 50  0001 C CNN
+F 1 "TBLOCK" H 3420 5210 50  0001 C CNN
+F 2 "" H 3400 3540 50  0000 C CNN
+F 3 "" H 3400 3540 50  0000 C CNN
+	4    3400 4990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2620 4820 2620 4740
+Wire Wire Line
+	2620 4740 3150 4740
+Wire Wire Line
+	3150 4640 2520 4640
+Wire Wire Line
+	2520 4640 2520 4820
+Wire Wire Line
+	2520 6330 2520 6120
+Wire Wire Line
+	2520 6120 2860 6120
+Wire Wire Line
+	2860 6120 2860 4840
+Wire Wire Line
+	2860 4840 3150 4840
+Wire Wire Line
+	3150 4940 2970 4940
+Wire Wire Line
+	2970 4940 2970 6260
+Wire Wire Line
+	2970 6260 2620 6260
+Wire Wire Line
+	2620 6260 2620 6330
+Wire Wire Line
+	5950 2540 5950 2640
+Wire Wire Line
+	6050 2540 6050 2640
+Wire Wire Line
+	6150 2540 6150 2640
+Wire Wire Line
+	6250 2540 6250 2640
+Entry Wire Line
+	5850 2740 5950 2640
+Entry Wire Line
+	5950 2740 6050 2640
+Wire Bus Line
+	5300 2740 5950 2740
+Wire Wire Line
+	6930 2540 6930 2640
+Wire Wire Line
+	7030 2540 7030 2640
+NoConn ~ 7130 2540
+NoConn ~ 7230 2540
+Entry Wire Line
+	6150 2640 6250 2740
+Entry Wire Line
+	6250 2640 6350 2740
+Entry Wire Line
+	6830 2740 6930 2640
+Entry Wire Line
+	6930 2740 7030 2640
+Wire Bus Line
+	6250 2740 6930 2740
+$Comp
+L TERM_06 TB6
+U 1 1 57EFFC4F
+P 8410 2170
+F 0 "TB6" H 8410 2550 50  0000 C CNN
+F 1 "TERM_06" H 8410 1790 50  0000 C CNN
+F 2 "" H 8410 970 50  0000 C CNN
+F 3 "" H 8410 970 50  0000 C CNN
+	1    8410 2170
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN-1 T?
+U 1 1 57F00F04
+P 5600 4790
+F 0 "T?" H 5570 4670 50  0001 C CNN
+F 1 "Green" H 5280 4840 50  0000 L CNN
+F 2 "" H 5600 3340 50  0000 C CNN
+F 3 "" H 5600 3340 50  0000 C CNN
+	1    5600 4790
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN-1 T?
+U 2 1 57F013AD
+P 5600 4890
+F 0 "T?" H 5570 4770 50  0001 C CNN
+F 1 "Red" H 5350 4940 50  0000 L CNN
+F 2 "" H 5600 3440 50  0000 C CNN
+F 3 "" H 5600 3440 50  0000 C CNN
+	2    5600 4890
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN-1 T?
+U 3 1 57F01752
+P 5600 4990
+F 0 "T?" H 5570 4870 50  0001 C CNN
+F 1 "Black" H 5390 5040 50  0000 C CNN
+F 2 "" H 5600 3540 50  0000 C CNN
+F 3 "" H 5600 3540 50  0000 C CNN
+	3    5600 4990
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN-1 T?
+U 4 1 57F017DD
+P 5600 5090
+F 0 "T?" H 5570 4970 50  0001 C CNN
+F 1 "White" H 5290 5140 50  0000 L CNN
+F 2 "" H 5600 3640 50  0000 C CNN
+F 3 "" H 5600 3640 50  0000 C CNN
+	4    5600 5090
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 4840 3650 4840
+Wire Wire Line
+	3650 4940 5350 4940
+Text Notes 5410 5380 0    60   ~ 0
+Anderson PP block\nto District 1 (yard)
+Wire Wire Line
+	5350 5040 5250 5040
+Wire Wire Line
+	5350 5140 5250 5140
+Entry Wire Line
+	5150 5240 5250 5140
+Entry Wire Line
+	5150 5140 5250 5040
+Wire Bus Line
+	5150 5140 5150 6470
+Wire Bus Line
+	5150 6480 5150 7110
+Wire Bus Line
+	5150 7110 550  7110
+Text Notes 10360 3720 2    60   ~ 0
+To District 2\n(Mainline)
+Text Notes 3600 3730 0    60   ~ 0
+LocoNet Devices and\nconnections not shown.
+Wire Bus Line
+	7990 910  7990 2320
+Wire Bus Line
+	9060 2020 9060 4240
+Wire Bus Line
+	9260 4670 9260 6270
+Wire Bus Line
+	9260 6270 8500 6270
+Wire Bus Line
+	9160 4510 9160 5690
+Wire Bus Line
+	9160 5690 5150 5690
+Wire Wire Line
+	4740 1480 4640 1480
+Wire Wire Line
+	4740 1580 4640 1580
+Entry Wire Line
+	4540 1380 4640 1480
+Entry Wire Line
+	4540 1480 4640 1580
+Text Notes 4540 1480 1    60   ~ 0
+LED Bus
+Wire Bus Line
+	4540 1090 4540 1480
+Wire Wire Line
+	5690 1480 5590 1480
+Wire Wire Line
+	5690 1580 5590 1580
+Entry Wire Line
+	5490 1380 5590 1480
+Entry Wire Line
+	5490 1480 5590 1580
+Text Notes 5490 1480 1    60   ~ 0
+LED Bus
+Wire Bus Line
+	5490 1090 5490 1480
+Wire Wire Line
+	6670 1480 6570 1480
+Wire Wire Line
+	6670 1580 6570 1580
+Entry Wire Line
+	6470 1380 6570 1480
+Entry Wire Line
+	6470 1480 6570 1580
+Text Notes 6470 1480 1    60   ~ 0
+LED Bus
+Wire Bus Line
+	6470 1090 6470 1480
+Wire Wire Line
+	5300 2540 5300 2640
+Wire Wire Line
+	5200 2540 5200 2640
+Entry Wire Line
+	5300 2640 5400 2740
+Entry Wire Line
+	5200 2640 5300 2740
+Wire Wire Line
+	5000 2540 5000 4640
+Wire Wire Line
+	5000 4640 3650 4640
+Wire Wire Line
+	3650 4740 5100 4740
+Wire Wire Line
+	5100 4740 5100 2540
+Wire Wire Line
+	5460 1900 5560 1900
+Wire Wire Line
+	5460 2000 5560 2000
+Entry Wire Line
+	5560 1900 5660 2000
+Entry Wire Line
+	5560 2000 5660 2100
+Text Notes 5660 2100 3    60   ~ 0
+Alarm Bus
+Wire Wire Line
+	6410 1900 6510 1900
+Wire Wire Line
+	6410 2000 6510 2000
+Entry Wire Line
+	6510 1900 6610 2000
+Entry Wire Line
+	6510 2000 6610 2100
+Wire Wire Line
+	7390 1900 7490 1900
+Wire Wire Line
+	7390 2000 7490 2000
+Entry Wire Line
+	7490 1900 7590 2000
+Entry Wire Line
+	7490 2000 7590 2100
+Text Notes 6610 2100 3    60   ~ 0
+Alarm Bus
+Text Notes 7590 2100 3    60   ~ 0
+Alarm Bus
+Wire Bus Line
+	7590 2000 7590 2560
+Wire Bus Line
+	6610 2000 6610 2560
+Wire Bus Line
+	5660 2010 5660 2560
+Wire Wire Line
+	2500 3490 2500 3160
+Wire Wire Line
+	2700 3160 2700 3490
+Wire Wire Line
+	2600 3490 2600 3230
+Wire Wire Line
+	2600 3230 1800 3230
+Connection ~ 1800 3230
+Entry Wire Line
+	2500 3160 2600 3060
+Entry Wire Line
+	2700 3160 2800 3060
+Text Label 3020 3060 0    60   ~ 0
+Programming_Track
+Wire Bus Line
+	2600 3060 3910 3060
+$EndSCHEMATC
