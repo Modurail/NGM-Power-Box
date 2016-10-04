@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "District 1 Power Box"
-Date "2016-08-27"
-Rev "2"
+Date "2016-09-30"
+Rev "4"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -1045,7 +1045,7 @@ Wire Bus Line
 Text Notes 8820 2870 0    60   ~ 0
 Sub-districts 1-4\ncorrespond to discreet\nyard sections.
 $Comp
-L TRANSFORMER_VPS16 TR1
+L TRANSFORMER_VPS16-RESCUE-NGM_Power_Box TR1
 U 1 1 57E17910
 P 2620 1830
 F 0 "TR1" V 2620 2210 50  0000 C CNN

@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-09-30"
 Rev "4"
@@ -78,5 +78,11 @@ S 1370 2910 1140 500
 U 57EED52C
 F0 "PSX-4 Yard Mount" 60
 F1 "PSX-4.sch" 60
+$EndSheet
+$Sheet
+S 3220 2980 1100 390 
+U 57F1B72E
+F0 "Power Box Final" 60
+F1 "Main Power Box.sch" 60
 $EndSheet
 $EndSCHEMATC

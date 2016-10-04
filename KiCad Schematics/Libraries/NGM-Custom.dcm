@@ -67,6 +67,10 @@ $CMP TRANSFORMER_MCI_4-06-8016
 D MCI 100 VA Chassis Mount Transformer
 $ENDCMP
 #
+$CMP TRANSFORMER_VPS16
+D Triad Magnetics 175 VA Chassis Mount Transformer
+$ENDCMP
+#
 $CMP Terminal_3P
 D Connector 02x03
 $ENDCMP

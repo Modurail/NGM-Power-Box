@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title "District 1 Power Box"
-Date "2016-08-27"
-Rev "2"
+Date "2016-09-30"
+Rev "4"
 Comp "North Georgia Modurail"
 Comment1 ""
 Comment2 ""
@@ -447,9 +447,9 @@ Connection ~ 1360 3350
 Wire Wire Line
 	2020 4820 2020 4740
 Wire Wire Line
-	1360 4740 2020 4740
+	2020 4740 1360 4740
 Wire Wire Line
-	1360 3220 1360 4740
+	1360 4740 1360 3220
 Wire Wire Line
 	2020 6330 2020 6270
 Wire Wire Line
@@ -802,20 +802,10 @@ Wire Bus Line
 Wire Bus Line
 	5660 2010 5660 2560
 Wire Wire Line
-	2500 3490 2500 3160
-Wire Wire Line
-	2700 3160 2700 3490
-Wire Wire Line
 	2600 3490 2600 3230
 Wire Wire Line
 	2600 3230 1800 3230
 Connection ~ 1800 3230
-Entry Wire Line
-	2500 3160 2600 3060
-Entry Wire Line
-	2700 3160 2800 3060
-Text Label 3020 3060 0    60   ~ 0
-Programming_Track
-Wire Bus Line
-	2600 3060 3910 3060
+NoConn ~ 2700 3490
+NoConn ~ 2500 3490
 $EndSCHEMATC

@@ -55,12 +55,20 @@ $CMP TERM_07
 D DCS 240 Screw Terminal 1x7
 $ENDCMP
 #
+$CMP TERM_07_DB
+D DCS 240 Screw Terminal 1x7
+$ENDCMP
+#
 $CMP TERM_08
 D Connector 02x08
 $ENDCMP
 #
 $CMP TRANSFORMER_MCI_4-06-8016
 D MCI 100 VA Chassis Mount Transformer
+$ENDCMP
+#
+$CMP TRANSFORMER_VPS16
+D Triad Magnetics 175 VA Chassis Mount Transformer
 $ENDCMP
 #
 $CMP Terminal_3P
