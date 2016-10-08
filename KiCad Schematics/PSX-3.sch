@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 14 16
+Sheet 7 16
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-10-08"
-Rev "5"
+Rev "5.1"
 Comp "North Georgia Modurail, Inc."
 Comment1 ""
 Comment2 ""
@@ -130,7 +130,7 @@ Text Label 4830 3400 3    60   ~ 0
 AlarmBus
 Text Label 3700 3400 3    60   ~ 0
 AlarmBus
-Text Label 1860 1700 0    39   ~ 0
+Text Label 1860 2200 0    39   ~ 0
 Orange
 Text Label 3230 2340 1    60   ~ 0
 Red
@@ -148,7 +148,7 @@ Text Label 4570 4040 0    60   ~ 0
 Blue/Yellow
 Text Label 3430 4040 0    60   ~ 0
 Red/Green
-Text Label 1870 2200 0    39   ~ 0
+Text Label 1870 1700 0    39   ~ 0
 Green
 Text Label 1860 1950 0    39   ~ 0
 Blue
@@ -347,7 +347,7 @@ To Sub-District Bus
 Text Notes 1770 4090 0    60   ~ 0
 From Booster
 Text Notes 2110 770  0    79   ~ 0
-CAT5 (Type A)
+CAT5\nPinout T568A
 $Sheet
 S 860  1660 960  720 
 U 57F8CCA5
@@ -360,18 +360,18 @@ F5 "Red_LED1-" I R 1820 2300 39
 F6 "Red_LED2-" I R 1820 2050 39 
 F7 "Red_LED3-" I R 1820 1800 39 
 $EndSheet
-Text Label 1870 2300 0    39   ~ 0
+Text Label 1870 1800 0    39   ~ 0
 Green-White
 Text Label 1870 2050 0    39   ~ 0
 Blue-White
-Text Label 1850 1800 0    39   ~ 0
+Text Label 1860 2300 0    39   ~ 0
 Orange-White
 Text Label 2540 4330 0    60   ~ 0
 Green
 Text Label 2540 4210 0    60   ~ 0
 Red
-Text Notes 1560 2560 0    79   ~ 0
-CAT5 (Type A)
+Text Notes 1570 2650 0    79   ~ 0
+CAT5\nPinout T568A
 Wire Wire Line
 	3230 3840 3230 3940
 Wire Wire Line
@@ -518,4 +518,6 @@ Wire Wire Line
 	2550 2880 2550 2300
 Wire Wire Line
 	2550 2300 1820 2300
+Text Notes 920  2020 0    39   ~ 0
+Note reverse\ncolors from\nPSX-4
 $EndSCHEMATC
