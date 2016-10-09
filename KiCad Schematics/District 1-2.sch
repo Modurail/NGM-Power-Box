@@ -88,11 +88,7 @@ Wire Wire Line
 Wire Wire Line
 	1050 1350 650  1350
 Wire Bus Line
-	550  600  550  1050
-Wire Bus Line
-	550  1050 550  1150
-Wire Bus Line
-	550  1150 550  1250
+	550  600  550  1250
 Wire Wire Line
 	1550 1450 2560 1450
 Wire Wire Line
@@ -106,7 +102,7 @@ Wire Wire Line
 Wire Wire Line
 	2360 2000 2360 2150
 Wire Wire Line
-	2360 2150 2870 2150
+	2870 2150 2360 2150
 Wire Wire Line
 	1550 1250 2870 1250
 Wire Wire Line
@@ -118,9 +114,7 @@ Wire Wire Line
 Text Notes 3030 1200 0    60   ~ 0
 Connect to\nTR1 chassis.
 Wire Wire Line
-	2870 2150 2870 2000
-Wire Wire Line
-	2870 1250 2870 2000
+	2870 1250 2870 2150
 Wire Wire Line
 	2700 1350 2700 2050
 Wire Wire Line
@@ -178,9 +172,7 @@ Entry Wire Line
 Entry Wire Line
 	4230 2790 4330 2690
 Wire Bus Line
-	4330 2280 4330 2490
-Wire Bus Line
-	4330 2490 4330 2590
+	4330 2280 4330 2590
 Wire Bus Line
 	4330 2600 4330 2690
 Text Label 2370 2150 0    60   ~ 0
@@ -317,39 +309,23 @@ DCC_Ground
 Wire Wire Line
 	1800 1650 1550 1650
 Wire Wire Line
-	2860 2640 3150 2640
+	2860 2640 3450 2640
 Wire Wire Line
-	3150 2640 3450 2640
-Wire Wire Line
-	2860 2740 3260 2740
-Wire Wire Line
-	3260 2740 3450 2740
+	2860 2740 3450 2740
 Wire Wire Line
 	2360 2740 2140 2740
 Wire Wire Line
-	2140 2740 2140 3050
-Wire Wire Line
-	2140 3050 2140 4240
-Wire Wire Line
-	2140 4240 2140 5180
+	2140 2740 2140 5180
 Wire Wire Line
 	2140 3050 1600 3050
 Wire Wire Line
 	2360 2640 2060 2640
 Wire Wire Line
-	2060 2640 2060 3150
-Wire Wire Line
-	2060 3150 2060 4140
-Wire Wire Line
-	2060 4140 2060 5080
+	2060 2640 2060 5080
 Wire Wire Line
 	2060 3150 1600 3150
 Wire Wire Line
-	1800 1650 1800 3350
-Wire Wire Line
-	1800 3350 1800 4540
-Wire Wire Line
-	1800 4540 1800 5480
+	1800 1650 1800 5480
 Wire Wire Line
 	1800 3350 1600 3350
 Connection ~ 1800 3350
@@ -522,13 +498,9 @@ To District 1\n(Yard)
 Wire Wire Line
 	2930 5040 2930 6160
 Wire Wire Line
-	2800 6160 2930 6160
+	2800 6160 6640 6160
 Wire Wire Line
-	2930 6160 6640 6160
-Wire Wire Line
-	2800 6280 3000 6280
-Wire Wire Line
-	3000 6280 6770 6280
+	2800 6280 6770 6280
 Wire Wire Line
 	3000 6280 3000 5140
 Text Label 3220 5040 0    61   ~ 0

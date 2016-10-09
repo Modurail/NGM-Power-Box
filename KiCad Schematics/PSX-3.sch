@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 7 16
+Sheet 3 16
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-10-08"
 Rev "5.1"
@@ -354,11 +354,11 @@ U 57F8CCA5
 F0 "3 Red LEDs" 60
 F1 "LEDs.sch" 60
 F2 "Red_LED2+" I R 1820 1950 39 
-F3 "Red_LED1+" I R 1820 2200 39 
-F4 "Red_LED3+" I R 1820 1700 39 
-F5 "Red_LED1-" I R 1820 2300 39 
+F3 "Red_LED1+" I R 1820 1700 39 
+F4 "Red_LED3+" I R 1820 2200 39 
+F5 "Red_LED1-" I R 1820 1800 39 
 F6 "Red_LED2-" I R 1820 2050 39 
-F7 "Red_LED3-" I R 1820 1800 39 
+F7 "Red_LED3-" I R 1820 2300 39 
 $EndSheet
 Text Label 1870 1800 0    39   ~ 0
 Green-White
@@ -518,6 +518,4 @@ Wire Wire Line
 	2550 2880 2550 2300
 Wire Wire Line
 	2550 2300 1820 2300
-Text Notes 920  2020 0    39   ~ 0
-Note reverse\ncolors from\nPSX-4
 $EndSCHEMATC
