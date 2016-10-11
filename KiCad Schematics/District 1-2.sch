@@ -102,7 +102,7 @@ Wire Wire Line
 Wire Wire Line
 	2360 2000 2360 2150
 Wire Wire Line
-	2870 2150 2360 2150
+	2360 2150 2870 2150
 Wire Wire Line
 	1550 1250 2870 1250
 Wire Wire Line
@@ -283,14 +283,14 @@ Wire Wire Line
 	2470 4840 2650 4840
 Wire Wire Line
 	2650 4940 2540 4940
-Text Notes 3660 4210 0    60   ~ 0
+Text Notes 3640 4140 0    60   ~ 0
 To District 2\n(Mainline)
 Text Notes 7130 1420 0    118  ~ 24
 LocoNet Devices and\nconnections not shown.
 NoConn ~ 1600 3450
 NoConn ~ 1600 3250
 $Sheet
-S 3570 3430 1280 990 
+S 3570 3430 1280 790 
 U 57F943E9
 F0 "PSX-3 Assembly1" 60
 F1 "PSX-3.sch" 60
@@ -302,7 +302,6 @@ F6 "Track_2A" I R 4850 3800 60
 F7 "Track_2B" I R 4850 3900 60 
 F8 "Track_3A" I R 4850 4050 60 
 F9 "Track_3B" I R 4850 4150 60 
-F10 "DCC_Ground" I R 4850 4300 60 
 $EndSheet
 Text GLabel 1070 2110 2    60   Input ~ 0
 DCC_Ground
@@ -461,12 +460,6 @@ Wire Wire Line
 	5250 4150 5250 4050
 Wire Wire Line
 	5250 4050 7190 4050
-Wire Wire Line
-	7190 4150 5350 4150
-Wire Wire Line
-	5350 4150 5350 4300
-Wire Wire Line
-	5350 4300 4850 4300
 Text Label 5030 3550 0    61   ~ 0
 Red
 Text Label 5050 3650 0    61   ~ 0
@@ -479,7 +472,7 @@ Text Label 5200 3950 0    61   ~ 0
 Orange
 Text Label 5280 4050 0    61   ~ 0
 Brown
-Text Label 5380 4150 0    61   ~ 0
+Text Label 6880 4350 0    61   ~ 0
 Gray
 Text GLabel 600  4440 3    61   Input ~ 0
 16VAC-B
@@ -559,16 +552,16 @@ Wire Wire Line
 Wire Wire Line
 	5080 5140 4450 5140
 Wire Wire Line
-	7190 4250 6640 4250
+	7190 4150 6640 4150
 Wire Wire Line
-	6640 4250 6640 6160
+	6640 4150 6640 6160
 Wire Wire Line
-	6770 6280 6770 4350
+	6770 6280 6770 4250
 Wire Wire Line
-	6770 4350 7190 4350
-Text Label 6640 4250 0    61   ~ 0
+	6770 4250 7190 4250
+Text Label 6760 4150 0    61   ~ 0
 White
-Text Label 6770 4350 0    61   ~ 0
+Text Label 6770 4250 0    61   ~ 0
 Black
 Text Label 2880 2640 0    61   ~ 0
 Black
@@ -624,4 +617,12 @@ Wire Wire Line
 	4170 1210 4170 1630
 Text Notes 4490 1550 0    61   ~ 0
 12V Fans\nin Series
+Wire Wire Line
+	7190 4350 6880 4350
+Wire Wire Line
+	6880 4350 6880 6420
+Wire Wire Line
+	6880 6420 2800 6420
+Text GLabel 2800 6420 0    60   Input ~ 0
+DCC_Ground
 $EndSCHEMATC

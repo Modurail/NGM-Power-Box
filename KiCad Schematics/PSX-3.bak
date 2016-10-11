@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 16
+Sheet 14 16
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-10-08"
 Rev "5.1"

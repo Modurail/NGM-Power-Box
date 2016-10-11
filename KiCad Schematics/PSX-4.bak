@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 12 16
+Sheet 10 16
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-10-08"
-Rev "5"
+Rev "5.1"
 Comp "North Georgia Modurail, Inc."
 Comment1 ""
 Comment2 ""
