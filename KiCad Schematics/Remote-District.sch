@@ -128,7 +128,9 @@ Wire Wire Line
 Wire Wire Line
 	1050 1250 850  1250
 Wire Bus Line
-	750  850  750  1150
+	750  850  750  1050
+Wire Bus Line
+	750  1050 750  1150
 Wire Wire Line
 	1050 1450 650  1450
 Wire Wire Line
@@ -150,7 +152,9 @@ Wire Wire Line
 Wire Wire Line
 	2030 5290 1420 5290
 Wire Bus Line
-	1320 5290 1320 6410
+	1320 5290 1320 5390
+Wire Bus Line
+	1320 5390 1320 6410
 Wire Bus Line
 	2030 5650 1560 5650
 Wire Bus Line
@@ -180,7 +184,9 @@ Entry Wire Line
 Entry Wire Line
 	5340 5160 5440 5060
 Wire Bus Line
-	5440 4730 5440 5060
+	5440 4730 5440 4960
+Wire Bus Line
+	5440 4960 5440 5060
 Text Label 5440 4730 0    60   ~ 0
 PS14
 Wire Bus Line
@@ -236,9 +242,17 @@ Entry Wire Line
 Text Label 8650 5080 3    60   ~ 0
 16VAC
 Wire Bus Line
-	3530 6410 3530 2730
+	3530 6410 3530 2830
 Wire Bus Line
-	550  1550 550  7810
+	3530 2830 3530 2730
+Wire Bus Line
+	550  1550 550  1650
+Wire Bus Line
+	550  1650 550  4590
+Wire Bus Line
+	550  4590 550  4690
+Wire Bus Line
+	550  4690 550  7810
 Text Notes 1990 2900 0    60   ~ 0
 Primary wired parallel\nSecondary wired in series
 Text Notes 1470 750  0    60   ~ 0
@@ -246,7 +260,9 @@ To 120 VAC\nPower Strip
 Text Notes 8100 2750 0    60   ~ 0
 Sub-districts 1-3\ncorrespond to\ntracks 1-3.
 Wire Bus Line
-	4940 4420 5310 4420
+	4940 4420 5040 4420
+Wire Bus Line
+	5040 4420 5310 4420
 Wire Bus Line
 	5310 4420 5310 3590
 Text Notes 4580 4300 0    60   ~ 0
@@ -304,7 +320,9 @@ Entry Wire Line
 Entry Wire Line
 	5910 6300 6010 6200
 Wire Bus Line
-	5910 6300 5910 7810
+	5910 6300 5910 6510
+Wire Bus Line
+	5910 6510 5910 7810
 Text Label 5910 6800 3    60   ~ 0
 16VAC
 Text Notes 6560 6680 0    60   ~ 0
@@ -320,17 +338,17 @@ Wire Wire Line
 Wire Wire Line
 	2340 2200 2390 2200
 Wire Wire Line
-	2210 2000 2390 2000
+	2120 2000 2390 2000
 Wire Wire Line
-	2070 2550 2390 2550
+	2020 2550 2390 2550
 Wire Wire Line
-	1550 1450 2210 1450
+	1550 1450 2120 1450
 Wire Wire Line
-	2210 1450 2210 2000
+	2120 1450 2120 2000
 Wire Wire Line
-	1550 1550 2070 1550
+	1550 1550 2020 1550
 Wire Wire Line
-	2070 1550 2070 2550
+	2020 1550 2020 2550
 Wire Wire Line
 	1550 1150 1790 1150
 Wire Wire Line
@@ -338,9 +356,11 @@ Wire Wire Line
 Entry Wire Line
 	3300 1420 3400 1520
 Entry Wire Line
-	2840 1420 2940 1520
+	3050 1420 3150 1520
 Wire Bus Line
-	2660 1420 3300 1420
+	2660 1420 3050 1420
+Wire Bus Line
+	3050 1420 3300 1420
 Wire Bus Line
 	2660 1420 2660 620 
 Text Notes 4210 2980 0    60   ~ 0
@@ -361,13 +381,13 @@ Text Label 1010 4690 0    60   ~ 0
 Black
 Text Label 1060 4790 0    60   ~ 0
 White
-Text Label 650  1450 0    60   ~ 0
+Text Label 670  1550 0    60   ~ 0
 Black
-Text Label 700  1550 0    60   ~ 0
+Text Label 660  1450 0    60   ~ 0
 White
-Text Label 1650 1550 0    60   ~ 0
+Text Label 2150 2000 0    60   ~ 0
 White
-Text Label 1720 1450 0    60   ~ 0
+Text Label 2100 2550 0    60   ~ 0
 Black
 Text Label 6020 6200 0    60   ~ 0
 Black
@@ -431,18 +451,24 @@ F 3 "" H 2610 2260 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2940 2350 2830 2350
+	3150 2350 2830 2350
 Wire Wire Line
-	2940 1520 2940 2350
+	3150 1520 3150 2000
 Wire Wire Line
-	2830 2000 2940 2000
-Connection ~ 2940 2000
+	3150 2000 3150 2350
+Wire Wire Line
+	2830 2000 3150 2000
+Wire Wire Line
+	3150 2000 3150 2000
+Connection ~ 3150 2000
 Wire Wire Line
 	3400 1520 3400 1700
 Wire Wire Line
 	3400 2550 3400 2200
 Wire Wire Line
-	2830 2550 3400 2550
+	2830 2550 3200 2550
+Wire Wire Line
+	3200 2550 3400 2550
 Wire Wire Line
 	2830 2200 3200 2200
 Wire Wire Line
@@ -503,7 +529,33 @@ F 3 "" H 10120 5330 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
-	9270 2420 9270 5430
+	9270 2420 9270 3560
+Wire Bus Line
+	9270 3560 9270 3660
+Wire Bus Line
+	9270 3660 9270 3760
+Wire Bus Line
+	9270 3760 9270 3860
+Wire Bus Line
+	9270 3860 9270 3960
+Wire Bus Line
+	9270 3960 9270 4060
+Wire Bus Line
+	9270 4060 9270 4160
+Wire Bus Line
+	9270 4160 9270 4830
+Wire Bus Line
+	9270 4830 9270 4930
+Wire Bus Line
+	9270 4930 9270 5030
+Wire Bus Line
+	9270 5030 9270 5130
+Wire Bus Line
+	9270 5130 9270 5230
+Wire Bus Line
+	9270 5230 9270 5330
+Wire Bus Line
+	9270 5330 9270 5430
 Entry Wire Line
 	8650 4560 8750 4460
 Entry Wire Line
@@ -513,7 +565,15 @@ Entry Wire Line
 Entry Wire Line
 	8650 5730 8750 5630
 Wire Bus Line
-	8650 4460 8650 6310
+	8650 4460 8650 4560
+Wire Bus Line
+	8650 4560 8650 5730
+Wire Bus Line
+	8650 5730 8650 5830
+Wire Bus Line
+	8650 5830 8650 6100
+Wire Bus Line
+	8650 6100 8650 6310
 Text Label 9370 3660 0    60   ~ 0
 Red
 Text Label 9370 3760 0    60   ~ 0
@@ -604,13 +664,27 @@ Orange
 Text Label 7290 3250 0    60   ~ 0
 Brown
 Wire Wire Line
-	7240 3450 7850 3450
+	7240 3450 7620 3450
+Wire Wire Line
+	7620 3450 7850 3450
 Entry Wire Line
 	7850 3450 7950 3350
 Text Label 7280 3450 0    60   ~ 0
 Gray
 Wire Bus Line
-	7950 2420 7950 3350
+	7950 2420 7950 2540
+Wire Bus Line
+	7950 2540 7950 2640
+Wire Bus Line
+	7950 2640 7950 2770
+Wire Bus Line
+	7950 2770 7950 2880
+Wire Bus Line
+	7950 2880 7950 3050
+Wire Bus Line
+	7950 3050 7950 3150
+Wire Bus Line
+	7950 3150 7950 3350
 Wire Bus Line
 	7950 2420 9270 2420
 Text GLabel 7070 4500 0    60   Input ~ 0
@@ -620,4 +694,8 @@ Wire Wire Line
 Wire Wire Line
 	7620 4500 7070 4500
 Connection ~ 7620 3450
+Text Label 2840 2550 0    60   ~ 0
+Black
+Text Label 2840 2000 0    60   ~ 0
+White
 $EndSCHEMATC
