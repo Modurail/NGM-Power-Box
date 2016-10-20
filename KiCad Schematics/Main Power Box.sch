@@ -1003,19 +1003,4 @@ Text Notes 4160 4370 0    39   ~ 0
 District 2\n(mainline)
 Text Notes 7240 4390 0    39   ~ 0
 District 1\n(yard)
-$Comp
-L DPDT SW1
-U 1 1 57F9AC42
-P 9130 1970
-F 0 "SW1" V 9070 1970 50  0000 C CNN
-F 1 "DPDT" V 8850 1970 50  0000 C CNN
-F 2 "" H 8505 2145 50  0000 C CNN
-F 3 "" H 8505 2145 50  0000 C CNN
-	1    9130 1970
-	0    -1   1    0   
-$EndComp
-NoConn ~ 8930 2260
-NoConn ~ 9330 2260
-Text Notes 8890 1230 0    60   ~ 0
-RRampMeter\nSelection switch
 $EndSCHEMATC

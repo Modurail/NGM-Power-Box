@@ -95,22 +95,20 @@ LocoNet
 $Comp
 L RRampmeter M?
 U 1 1 57C1C74E
-P 4220 2530
-F 0 "M?" V 4080 2590 60  0001 C CNN
-F 1 "RRampMeter" V 4160 2530 60  0000 L CNN
-F 2 "" H 4220 2530 60  0000 C CNN
-F 3 "" H 4220 2530 60  0000 C CNN
-	1    4220 2530
-	0    1    1    0   
+P 4600 3310
+F 0 "M?" V 4460 3370 60  0001 C CNN
+F 1 "RRampMeter" H 4020 3650 60  0000 L CNN
+F 2 "" H 4600 3310 60  0000 C CNN
+F 3 "" H 4600 3310 60  0000 C CNN
+	1    4600 3310
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4180 1210 3980 1210
 Wire Wire Line
 	4180 1310 3980 1310
 Wire Bus Line
-	3880 910  3880 1110
-Wire Bus Line
-	3880 1110 3880 1210
+	3880 910  3880 1210
 Wire Wire Line
 	2030 4890 1960 4890
 Wire Wire Line
@@ -124,7 +122,7 @@ Wire Bus Line
 Wire Bus Line
 	1560 6180 3870 6180
 Wire Wire Line
-	5540 2630 4800 2630
+	4700 2630 5540 2630
 Wire Wire Line
 	5540 2730 4800 2730
 Wire Bus Line
@@ -140,9 +138,7 @@ Entry Wire Line
 Entry Wire Line
 	5340 5160 5440 5060
 Wire Bus Line
-	5440 4730 5440 4960
-Wire Bus Line
-	5440 4960 5440 5060
+	5440 4730 5440 5060
 Text Label 5440 4730 0    60   ~ 0
 PS14
 Wire Bus Line
@@ -196,9 +192,7 @@ To 120 VAC\nPower Strip
 Text Notes 8100 2750 0    60   ~ 0
 Sub-districts 1-3\ncorrespond to\ntracks 1-3.
 Wire Bus Line
-	4940 4420 5040 4420
-Wire Bus Line
-	5040 4420 5310 4420
+	4940 4420 5310 4420
 Wire Bus Line
 	5310 4420 5310 3590
 Text Notes 4580 4300 0    60   ~ 0
@@ -241,7 +235,7 @@ F 3 "" H 7160 5630 50  0000 C CNN
 	1    7160 5630
 	1    0    0    -1  
 $EndComp
-Text Notes 6840 5530 0    60   ~ 0
+Text Notes 6740 5530 0    60   ~ 0
 Panel mounted\ncircuit breaker.
 Wire Wire Line
 	1520 3560 1570 3560
@@ -257,7 +251,7 @@ Entry Wire Line
 	1930 2160 2030 2060
 Entry Wire Line
 	1930 1850 2030 1750
-Text Notes 4210 2980 0    60   ~ 0
+Text Notes 4010 3120 0    60   ~ 0
 (Optional)
 Text Notes 4410 6220 0    60   ~ 0
 LNRP\n(optional)
@@ -269,11 +263,11 @@ Text Label 1520 5190 0    60   ~ 0
 Green
 Text Label 1570 5290 0    60   ~ 0
 Red
-Text Label 1700 5090 0    60   ~ 0
+Text Label 1500 5090 0    60   ~ 0
 Gray
-Text Label 1790 4690 0    60   ~ 0
+Text Label 1340 4590 0    60   ~ 0
 Black
-Text Label 1810 4790 0    60   ~ 0
+Text Label 1380 4790 0    60   ~ 0
 White
 Text Label 7480 5230 0    60   ~ 0
 White
@@ -346,13 +340,9 @@ Entry Wire Line
 Entry Wire Line
 	9370 5430 9270 5330
 Wire Wire Line
-	8480 5730 8840 5730
+	8480 5730 9920 5730
 Wire Wire Line
-	8840 5730 9920 5730
-Wire Wire Line
-	8480 5630 8940 5630
-Wire Wire Line
-	8940 5630 9920 5630
+	8480 5630 9920 5630
 $Comp
 L CONN_01X09 M-9B
 U 1 1 57F2088B
@@ -365,29 +355,7 @@ F 3 "" H 10120 5330 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
-	9270 2420 9270 3560
-Wire Bus Line
-	9270 3560 9270 3660
-Wire Bus Line
-	9270 3660 9270 3760
-Wire Bus Line
-	9270 3760 9270 3860
-Wire Bus Line
-	9270 3860 9270 3960
-Wire Bus Line
-	9270 3960 9270 4060
-Wire Bus Line
-	9270 4060 9270 4830
-Wire Bus Line
-	9270 4830 9270 4930
-Wire Bus Line
-	9270 4930 9270 5030
-Wire Bus Line
-	9270 5030 9270 5130
-Wire Bus Line
-	9270 5130 9270 5230
-Wire Bus Line
-	9270 5230 9270 5330
+	9270 2420 9270 5330
 Text Label 9370 3660 0    60   ~ 0
 Red
 Text Label 9370 3760 0    60   ~ 0
@@ -477,17 +445,7 @@ Orange
 Text Label 7290 3250 0    60   ~ 0
 Brown
 Wire Bus Line
-	7950 2420 7950 2540
-Wire Bus Line
-	7950 2540 7950 2640
-Wire Bus Line
-	7950 2640 7950 2770
-Wire Bus Line
-	7950 2770 7950 2880
-Wire Bus Line
-	7950 2880 7950 3050
-Wire Bus Line
-	7950 3050 7950 3150
+	7950 2420 7950 3150
 Wire Bus Line
 	7950 2420 9270 2420
 Text GLabel 6710 5930 0    60   Input ~ 0
@@ -508,9 +466,7 @@ F 3 "" H 8230 4180 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8480 5530 9040 5530
-Wire Wire Line
-	9040 5530 9920 5530
+	8480 5530 9920 5530
 Wire Wire Line
 	9040 5530 9040 4260
 Wire Wire Line
@@ -534,27 +490,20 @@ Wire Wire Line
 	1520 3760 1670 3760
 Wire Wire Line
 	1670 3760 1670 4690
-Connection ~ 1670 4690
 Wire Wire Line
 	1520 3210 1770 3210
 Wire Wire Line
 	1770 3210 1770 4790
-Wire Wire Line
-	1770 4790 1770 4840
 Connection ~ 1770 4790
 Wire Wire Line
 	620  3760 1080 3760
 Wire Wire Line
-	620  1850 620  3410
-Wire Wire Line
-	620  3410 620  3760
+	620  1850 620  3760
 Wire Wire Line
 	1080 3410 620  3410
 Connection ~ 620  3410
 Wire Wire Line
-	720  2160 720  3210
-Wire Wire Line
-	720  3210 720  3560
+	720  2160 720  3560
 Wire Wire Line
 	1080 3210 720  3210
 Connection ~ 720  3210
@@ -565,27 +514,21 @@ Wire Wire Line
 Wire Wire Line
 	1500 1850 1930 1850
 Wire Bus Line
-	2030 650  2030 1750
-Wire Bus Line
-	2030 1750 2030 2060
+	2030 650  2030 2160
 Wire Wire Line
 	720  3560 1080 3560
-Text GLabel 1320 4690 0    60   Input ~ 0
-16VAC_Black
-Text GLabel 1320 4840 0    60   Input ~ 0
-16VAC_White
-Wire Wire Line
-	1320 4690 1670 4690
+Text GLabel 1320 4590 0    60   Input ~ 0
+16VAC_B
+Text GLabel 1320 4790 0    60   Input ~ 0
+16VAC_W
 Wire Wire Line
 	1670 4690 2030 4690
 Wire Wire Line
-	1770 4790 2030 4790
-Wire Wire Line
-	1770 4840 1320 4840
+	1320 4790 2030 4790
 Text GLabel 6710 5630 0    60   Input ~ 0
-16VAC_Black
+16VAC_B
 Text GLabel 6710 5230 0    60   Input ~ 0
-16VAC_White
+16VAC_W
 Wire Wire Line
 	6910 5630 6710 5630
 Wire Wire Line
@@ -607,30 +550,18 @@ Rail_B
 Wire Wire Line
 	2030 5190 1320 5190
 Wire Wire Line
-	2030 5290 1490 5290
+	2030 5290 1440 5290
 Wire Wire Line
-	1490 5290 1490 5340
+	1440 5290 1440 5340
 Wire Wire Line
-	1490 5340 1320 5340
-Text GLabel 3530 2580 0    60   Input ~ 0
+	1440 5340 1320 5340
+Text GLabel 3980 3700 0    60   Input ~ 0
 Rail_A
-Text GLabel 3530 2780 0    60   Input ~ 0
+Text GLabel 3980 3850 0    60   Input ~ 0
 Rail_B
-Wire Wire Line
-	4020 2630 3640 2630
-Wire Wire Line
-	3640 2630 3640 2580
-Wire Wire Line
-	3640 2580 3530 2580
-Wire Wire Line
-	4020 2730 3640 2730
-Wire Wire Line
-	3640 2730 3640 2780
-Wire Wire Line
-	3640 2780 3530 2780
-Text Label 3740 2630 0    60   ~ 0
+Text Label 4210 3700 0    60   ~ 0
 Red
-Text Label 3730 2730 0    60   ~ 0
+Text Label 4210 3850 0    60   ~ 0
 Green
 Wire Wire Line
 	1320 4990 1440 4990
@@ -638,4 +569,38 @@ Wire Wire Line
 	1440 4990 1440 5090
 Wire Wire Line
 	1440 5090 2030 5090
+Wire Wire Line
+	1320 4590 1670 4590
+Connection ~ 1670 4590
+Wire Wire Line
+	4700 2630 4700 2730
+Wire Wire Line
+	3980 3700 4700 3700
+Wire Wire Line
+	4700 3700 4700 3510
+Wire Wire Line
+	3980 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3510
+Entry Wire Line
+	1930 2260 2030 2160
+Wire Wire Line
+	1930 2260 1300 2260
+Wire Wire Line
+	1300 2260 1300 2450
+$Comp
+L Earth #PWR?
+U 1 1 57FD578E
+P 1300 2450
+F 0 "#PWR?" H 1300 2200 50  0001 C CNN
+F 1 "Earth" H 1300 2300 50  0001 C CNN
+F 2 "" H 1300 2450 50  0000 C CNN
+F 3 "" H 1300 2450 50  0000 C CNN
+	1    1300 2450
+	1    0    0    -1  
+$EndComp
+Text Label 1460 2260 0    60   ~ 0
+Green
+Text Notes 1460 2590 0    60   ~ 0
+Ground to\nTR1 chassis.
 $EndSCHEMATC
