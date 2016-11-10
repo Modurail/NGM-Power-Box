@@ -95,13 +95,13 @@ LocoNet
 $Comp
 L RRampmeter M?
 U 1 1 57C1C74E
-P 4600 3310
-F 0 "M?" V 4460 3370 60  0001 C CNN
-F 1 "RRampMeter" H 4020 3650 60  0000 L CNN
-F 2 "" H 4600 3310 60  0000 C CNN
-F 3 "" H 4600 3310 60  0000 C CNN
-	1    4600 3310
-	1    0    0    -1  
+P 4600 2830
+F 0 "M?" V 4460 2890 60  0001 C CNN
+F 1 "RRampMeter" V 4970 2760 60  0000 L CNN
+F 2 "" H 4600 2830 60  0000 C CNN
+F 3 "" H 4600 2830 60  0000 C CNN
+	1    4600 2830
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4180 1210 3980 1210
@@ -122,7 +122,7 @@ Wire Bus Line
 Wire Bus Line
 	1560 6180 3870 6180
 Wire Wire Line
-	4700 2630 5540 2630
+	4800 2630 5540 2630
 Wire Wire Line
 	5540 2730 4800 2730
 Wire Bus Line
@@ -251,7 +251,7 @@ Entry Wire Line
 	1930 2160 2030 2060
 Entry Wire Line
 	1930 1850 2030 1750
-Text Notes 4010 3120 0    60   ~ 0
+Text Notes 4180 2940 0    60   ~ 0
 (Optional)
 Text Notes 4410 6220 0    60   ~ 0
 LNRP\n(optional)
@@ -555,13 +555,13 @@ Wire Wire Line
 	1440 5290 1440 5340
 Wire Wire Line
 	1440 5340 1320 5340
-Text GLabel 3980 3700 0    60   Input ~ 0
+Text GLabel 3200 2580 0    60   Input ~ 0
 Rail_A
-Text GLabel 3980 3850 0    60   Input ~ 0
+Text GLabel 3200 2730 0    60   Input ~ 0
 Rail_B
-Text Label 4210 3700 0    60   ~ 0
+Text Label 3430 2580 0    60   ~ 0
 Red
-Text Label 4210 3850 0    60   ~ 0
+Text Label 3430 2730 0    60   ~ 0
 Green
 Wire Wire Line
 	1320 4990 1440 4990
@@ -573,15 +573,9 @@ Wire Wire Line
 	1320 4590 1670 4590
 Connection ~ 1670 4590
 Wire Wire Line
-	4700 2630 4700 2730
+	3200 2580 3920 2580
 Wire Wire Line
-	3980 3700 4700 3700
-Wire Wire Line
-	4700 3700 4700 3510
-Wire Wire Line
-	3980 3850 4800 3850
-Wire Wire Line
-	4800 3850 4800 3510
+	3200 2730 4020 2730
 Entry Wire Line
 	1930 2260 2030 2160
 Wire Wire Line
@@ -603,4 +597,8 @@ Text Label 1460 2260 0    60   ~ 0
 Green
 Text Notes 1460 2590 0    60   ~ 0
 Ground to\nTR1 chassis.
+Wire Wire Line
+	4020 2630 3920 2630
+Wire Wire Line
+	3920 2630 3920 2580
 $EndSCHEMATC
