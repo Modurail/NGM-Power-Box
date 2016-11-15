@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 16 16
+Sheet 11 16
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-10-08"
 Rev "5.1"
@@ -338,13 +338,13 @@ Wire Wire Line
 	4160 3520 4160 3570
 Wire Wire Line
 	4160 4220 4160 4270
-Text HLabel 5140 2860 2    61   Input ~ 0
+Text HLabel 6710 5020 2    61   Input ~ 0
 Green_LED1-
 Text Label 4200 3070 0    39   ~ 0
 Blue
 Text Label 4200 3770 0    39   ~ 0
 Orange
-Text Label 4200 4270 0    39   ~ 0
+Text Label 5270 4270 0    39   ~ 0
 Orange-White
 Text Label 4210 4520 0    39   ~ 0
 Brown
@@ -352,14 +352,10 @@ Text Notes 4900 4850 0    60   ~ 0
 LED-G4 for\nPSX-4 only
 Wire Wire Line
 	4160 2860 4670 2860
-Text HLabel 5150 3570 2    61   Input ~ 0
-Green_LED2-
 Wire Wire Line
 	4160 3570 4680 3570
 Wire Wire Line
 	4160 4270 4660 4270
-Text HLabel 5140 4270 2    61   Input ~ 0
-Green_LED3-
 $Comp
 L R R1
 U 1 1 57F89882
@@ -379,8 +375,6 @@ F 3 "" H 4820 2860 50  0000 C CNN
 	1    4820 2860
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4970 2860 5140 2860
 $Comp
 L R R2
 U 1 1 57F89A97
@@ -400,8 +394,6 @@ F 3 "" H 4830 3570 50  0000 C CNN
 	1    4830 3570
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5150 3570 4980 3570
 $Comp
 L R R3
 U 1 1 57F89E27
@@ -422,21 +414,9 @@ F 3 "" H 4810 4270 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5140 4270 4960 4270
-Wire Wire Line
 	4160 4970 4160 5020
 Wire Wire Line
 	4160 5020 4680 5020
-Text HLabel 5150 5020 2    61   Input ~ 0
-Green_LED3-
-Wire Wire Line
-	4980 5020 5150 5020
-Text Label 4190 5020 0    39   ~ 0
-Brown-White
-Text Label 4190 2860 0    39   ~ 0
-Green-White
-Text Label 4190 3570 0    39   ~ 0
-Blue-White
 Wire Notes Line
 	5890 4430 5890 5260
 Wire Notes Line
@@ -445,4 +425,25 @@ Wire Notes Line
 	1970 5260 1970 4430
 Wire Notes Line
 	1970 4430 5890 4430
+Wire Wire Line
+	4980 5020 6710 5020
+Wire Wire Line
+	4970 2860 6520 2860
+Wire Wire Line
+	6520 2860 6520 5020
+Connection ~ 6520 5020
+Wire Wire Line
+	4980 3570 6520 3570
+Connection ~ 6520 3570
+Wire Wire Line
+	4960 4270 6520 4270
+Connection ~ 6520 4270
+Text Notes 6740 4810 0    60   ~ 0
+J2-1 Pins are common
+Text Label 5270 3570 0    39   ~ 0
+Orange-White
+Text Label 5260 2860 0    39   ~ 0
+Orange-White
+Text Label 5280 5020 0    39   ~ 0
+Orange-White
 $EndSCHEMATC
