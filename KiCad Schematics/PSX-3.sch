@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 14 16
+Sheet 3 16
 Title "NGM Power and LocoNet Power Boxes"
 Date "2016-10-08"
 Rev "5.2"
@@ -112,24 +112,6 @@ Entry Wire Line
 	5310 4040 5410 3940
 NoConn ~ 5510 3840
 NoConn ~ 5610 3840
-Entry Wire Line
-	3600 3200 3700 3300
-Entry Wire Line
-	3600 3300 3700 3400
-Entry Wire Line
-	4730 3200 4830 3300
-Entry Wire Line
-	4730 3300 4830 3400
-Entry Wire Line
-	5870 3300 5970 3400
-Entry Wire Line
-	5870 3200 5970 3300
-Text Label 5970 3400 3    60   ~ 0
-AlarmBus
-Text Label 4830 3400 3    60   ~ 0
-AlarmBus
-Text Label 3700 3400 3    60   ~ 0
-AlarmBus
 Text Label 1860 2200 0    39   ~ 0
 Orange
 Text Label 3230 2340 1    60   ~ 0
@@ -265,57 +247,45 @@ Rail_B
 $Comp
 L Crystal_Small B1
 U 1 1 57F85365
-P 5640 5130
+P 3700 3200
 AR Path="/57EBE249/57F943E9/57F85365" Ref="B1"  Part="1" 
 AR Path="/57C1C56F/57F80E5A/57F85365" Ref="B1"  Part="1" 
 AR Path="/57F1B72E/57FA908E/57F85365" Ref="B1"  Part="1" 
-F 0 "B1" H 5640 5230 50  0000 C CNN
-F 1 "Piezo" H 5640 5030 50  0001 C CNN
-F 2 "" H 5640 5130 50  0000 C CNN
-F 3 "" H 5640 5130 50  0000 C CNN
-	1    5640 5130
+F 0 "B1" H 3700 3300 50  0000 C CNN
+F 1 "Piezo" H 3700 3100 50  0001 C CNN
+F 2 "" H 3700 3200 50  0000 C CNN
+F 3 "" H 3700 3200 50  0000 C CNN
+	1    3700 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Crystal_Small B2
 U 1 1 57F8557A
-P 5640 5370
+P 4830 3200
 AR Path="/57EBE249/57F943E9/57F8557A" Ref="B2"  Part="1" 
 AR Path="/57C1C56F/57F80E5A/57F8557A" Ref="B2"  Part="1" 
 AR Path="/57F1B72E/57FA908E/57F8557A" Ref="B2"  Part="1" 
-F 0 "B2" H 5640 5470 50  0000 C CNN
-F 1 "Piezo" H 5640 5270 50  0001 C CNN
-F 2 "" H 5640 5370 50  0000 C CNN
-F 3 "" H 5640 5370 50  0000 C CNN
-	1    5640 5370
+F 0 "B2" H 4830 3300 50  0000 C CNN
+F 1 "Piezo" H 4830 3100 50  0001 C CNN
+F 2 "" H 4830 3200 50  0000 C CNN
+F 3 "" H 4830 3200 50  0000 C CNN
+	1    4830 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Crystal_Small B3
 U 1 1 57F855A1
-P 5640 5620
+P 5970 3200
 AR Path="/57EBE249/57F943E9/57F855A1" Ref="B3"  Part="1" 
 AR Path="/57C1C56F/57F80E5A/57F855A1" Ref="B3"  Part="1" 
 AR Path="/57F1B72E/57FA908E/57F855A1" Ref="B3"  Part="1" 
-F 0 "B3" H 5640 5720 50  0000 C CNN
-F 1 "Piezo" H 5640 5520 50  0001 C CNN
-F 2 "" H 5640 5620 50  0000 C CNN
-F 3 "" H 5640 5620 50  0000 C CNN
-	1    5640 5620
+F 0 "B3" H 5970 3300 50  0000 C CNN
+F 1 "Piezo" H 5970 3100 50  0001 C CNN
+F 2 "" H 5970 3200 50  0000 C CNN
+F 3 "" H 5970 3200 50  0000 C CNN
+	1    5970 3200
 	1    0    0    -1  
 $EndComp
-Entry Wire Line
-	5870 5130 5970 5030
-Entry Wire Line
-	5870 5370 5970 5270
-Entry Wire Line
-	5870 5620 5970 5520
-Entry Wire Line
-	5300 5230 5400 5130
-Entry Wire Line
-	5300 5470 5400 5370
-Entry Wire Line
-	5300 5720 5400 5620
 Text HLabel 8530 850  2    60   Input ~ 0
 Track_1A
 Text HLabel 8530 950  2    60   Input ~ 0
@@ -393,19 +363,11 @@ Wire Bus Line
 Wire Wire Line
 	3490 3200 3600 3200
 Wire Wire Line
-	3490 3300 3600 3300
-Wire Wire Line
 	4630 3200 4730 3200
-Wire Wire Line
-	4630 3300 4730 3300
 Wire Wire Line
 	5770 3200 5870 3200
 Wire Wire Line
-	5770 3300 5870 3300
-Wire Bus Line
-	3700 3300 3700 3600
-Wire Bus Line
-	4830 3300 4830 3600
+	5770 3300 6140 3300
 Wire Wire Line
 	2550 2880 2770 2880
 Wire Wire Line
@@ -447,24 +409,6 @@ Wire Wire Line
 	3130 3840 3130 4330
 Wire Wire Line
 	3130 4330 2420 4330
-Wire Wire Line
-	5870 5620 5740 5620
-Wire Wire Line
-	5740 5370 5870 5370
-Wire Wire Line
-	5870 5130 5740 5130
-Wire Wire Line
-	5540 5130 5400 5130
-Wire Wire Line
-	5540 5370 5400 5370
-Wire Wire Line
-	5540 5620 5400 5620
-Wire Bus Line
-	5300 5230 5300 5860
-Wire Bus Line
-	5300 5860 5970 5860
-Wire Bus Line
-	5970 5860 5970 3300
 Wire Wire Line
 	7610 850  8530 850 
 Wire Wire Line
@@ -515,4 +459,20 @@ Wire Wire Line
 Connection ~ 5610 1150
 Text Notes 5730 2390 0    60   ~ 0
 J2-1 Pins are common
+Wire Wire Line
+	6070 3200 6140 3200
+Wire Wire Line
+	6140 3200 6140 3300
+Wire Wire Line
+	3490 3300 3850 3300
+Wire Wire Line
+	3850 3300 3850 3200
+Wire Wire Line
+	3850 3200 3800 3200
+Wire Wire Line
+	4630 3300 5000 3300
+Wire Wire Line
+	5000 3300 5000 3200
+Wire Wire Line
+	5000 3200 4930 3200
 $EndSCHEMATC
